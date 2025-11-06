@@ -22,7 +22,7 @@
     <div class="container">
         <div class="navigator">
             <h3>Document List</h3>
-            <div id="file-list"></div>
+            <div id="file-list" style="max-height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden; padding-right: 6px; box-sizing: border-box;"></div>
         </div>
         <div class="editor">
             <div class="header">
@@ -32,7 +32,7 @@
                     <button id="save-btn" class="btn">Save</button>
                 </div>
             </div>
-            <div id="doc-content">
+            <div id="doc-content" style="max-height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden; padding-right: 6px;">
                 <p>No document selected. Please choose a document from the list.</p>
             </div>
         </div>
