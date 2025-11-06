@@ -1,0 +1,13 @@
+
+torch==2.9.0
+peft==0.17.1 # VersaPRM
+
+# Huggingface utilities
+transformers==4.46.0
+datasets==4.2.0
+
+# other utils
+tqdm
+matplotlib
+
+vllm==0.11.0

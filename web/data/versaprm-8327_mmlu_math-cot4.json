@@ -1,0 +1,160 @@
+{
+    "doc_id": "versaprm-8327_mmlu_math-cot4",
+    "raw_text": {
+        "question": "Question: 5.6-3. Let $\\bar{X}$ be the mean of a random sample of size 36 from an exponential distribution with mean 3 . Approximate $P(2.5 \\leq \\bar{X} \\leq 4)$\n\nA. 0.6732\nB. 0.8817\nC. 0.8452\nD. 0.7548\nE. 0.9026\nF. 0.5879\nG. 0.7653\nH. 0.6981\nI.  $0.8185$\nJ. 0.9254",
+        "response": "Since $\\bar{X}$ is the mean of a random sample of size $36$ from an exponential distribution with mean $3,$ we know that $\\bar{X}$ is approximately normally distributed with mean $\\mu=3$ and standard deviation $\\sigma=\\frac{3}{\\sqrt{36}}=\\frac{3}{6}=\\frac{1}{2}.$\n\nWe want to approximate the probability that $\\bar{X}$ is between $2.5$ and $4$:\n\n$P(2.5 \\leq \\bar{X} \\leq 4)$\n\nWe can use the normal approximation to the binomial to compute this probability. We need to find the z-scores corresponding to $2.5$ and $4$, which are:\n\n$\\frac{2.5-3}{\\frac{1}{2}}=-1$ and $\\frac{4-3}{\\frac{1}{2}}=2$\n\nNow, we use the fact that for a normal distribution, about $68\\%$ of the values lie within $1$ standard deviation of the mean, and about $95\\%$ of the values lie within $2$ standard deviations of the mean.\n\nIn this case, we want to find the probability that $\\bar{X}$ is between $2.5$ and $4$, which is between $-1$ and $2$ standard deviations from the mean. This is roughly $95\\%$ of the values, so:\n\n$P(2.5 \\leq \\bar{X} \\leq 4) \\approx 0.95 = 0.95$\n\nHowever, this is not among the answer choices. We need to be more precise. We can use a z-table or calculator to find the exact probabilities:\n\n$P(2.5 \\leq \\bar{X} \\leq 4) = P(Z \\leq 2) - P(Z \\leq -1)$\n\nwhere $Z$ is a standard normal random variable. We can look up the values in a z-table or use a calculator to find:\n\n$P(Z \\leq 2) \\approx 0.9772$ and $P(Z \\leq -1) \\approx 0.1587$\n\nSo, we have:\n\n$P(2.5 \\leq \\bar{X} \\leq 4) \\approx 0.9772 - 0.1587 = 0.8185$\n\nThe answer is (I)."
+    },
+    "metadata": {
+        "subject": "math",
+        "source": "scibench-stat",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 264,
+            "label": "question",
+            "text": "Question: 5.6-3. Let $\\bar{X}$ be the mean of a random sample of size 36 from an exponential distribution with mean 3 . Approximate $P(2.5 \\leq \\bar{X} \\leq 4)$\n\nA. 0.6732\nB. 0.8817\nC. 0.8452\nD. 0.7548\nE. 0.9026\nF. 0.5879\nG. 0.7653\nH. 0.6981\nI.  $0.8185$\nJ. 0.9254",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 265,
+            "label": "correct",
+            "text": "Since $\\bar{X}$ is the mean of a random sample of size $36$ from an exponential distribution with mean $3,$ we know that $\\bar{X}$ is approximately normally distributed with mean $\\mu=3$ and standard deviation $\\sigma=\\frac{3}{\\sqrt{36}}=\\frac{3}{6}=\\frac{1}{2}.$",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 265,
+            "end": 346,
+            "label": "correct",
+            "text": "We want to approximate the probability that $\\bar{X}$ is between $2.5$ and $4$:",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 346,
+            "end": 376,
+            "label": "correct",
+            "text": "$P(2.5 \\leq \\bar{X} \\leq 4)$",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 376,
+            "end": 530,
+            "label": "first_error",
+            "text": "We can use the normal approximation to the binomial to compute this probability. We need to find the z-scores corresponding to $2.5$ and $4$, which are:",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 530,
+            "end": 594,
+            "label": null,
+            "text": "$\\frac{2.5-3}{\\frac{1}{2}}=-1$ and $\\frac{4-3}{\\frac{1}{2}}=2$",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 594,
+            "end": 801,
+            "label": null,
+            "text": "Now, we use the fact that for a normal distribution, about $68\\%$ of the values lie within $1$ standard deviation of the mean, and about $95\\%$ of the values lie within $2$ standard deviations of the mean.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 801,
+            "end": 996,
+            "label": null,
+            "text": "In this case, we want to find the probability that $\\bar{X}$ is between $2.5$ and $4$, which is between $-1$ and $2$ standard deviations from the mean. This is roughly $95\\%$ of the values, so:",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 996,
+            "end": 1046,
+            "label": null,
+            "text": "$P(2.5 \\leq \\bar{X} \\leq 4) \\approx 0.95 = 0.95$",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 1046,
+            "end": 1190,
+            "label": null,
+            "text": "However, this is not among the answer choices. We need to be more precise. We can use a z-table or calculator to find the exact probabilities:",
+            "source": "response"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 1190,
+            "end": 1249,
+            "label": null,
+            "text": "$P(2.5 \\leq \\bar{X} \\leq 4) = P(Z \\leq 2) - P(Z \\leq -1)$",
+            "source": "response"
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 1249,
+            "end": 1366,
+            "label": null,
+            "text": "where $Z$ is a standard normal random variable. We can look up the values in a z-table or use a calculator to find:",
+            "source": "response"
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 1366,
+            "end": 1430,
+            "label": null,
+            "text": "$P(Z \\leq 2) \\approx 0.9772$ and $P(Z \\leq -1) \\approx 0.1587$",
+            "source": "response"
+        },
+        {
+            "id": "trace12",
+            "annotation": true,
+            "start": 1430,
+            "end": 1444,
+            "label": null,
+            "text": "So, we have:",
+            "source": "response"
+        },
+        {
+            "id": "trace13",
+            "annotation": true,
+            "start": 1444,
+            "end": 1507,
+            "label": null,
+            "text": "$P(2.5 \\leq \\bar{X} \\leq 4) \\approx 0.9772 - 0.1587 = 0.8185$",
+            "source": "response"
+        },
+        {
+            "id": "trace14",
+            "annotation": true,
+            "start": 1507,
+            "end": 1525,
+            "label": null,
+            "text": "The answer is (I).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

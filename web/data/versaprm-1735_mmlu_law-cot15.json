@@ -1,0 +1,79 @@
+{
+    "doc_id": "versaprm-1735_mmlu_law-cot15",
+    "raw_text": {
+        "question": "Question: A home security protection company provided protection services to property owners in the immediate area. The owner of a summer cottage in the area hired the company to provide 24- hour protection during the winter months when his home was unoccupied. According to the security arrangement, the company's uniformed guards would periodically patrol the property and, if necessary, provide an \"armed response\" to any unauthorized individuals who were found trespassing on the property. The company provided security protection to the owner's property for two years. The owner then notified the company that he was planning to sell the cottage. As a result, he requested that the company discontinue its home-protection service, effective immediately. Two weeks later, a burglar broke into the cottage and was ransacking it. As the burglar was exiting from the owner's house carrying a portable television set, he was seen by a security guard working for the company. The security guard, who was driving past the home on security patrol, had not been informed that the owner had discontinued protection services. The security guard suddenly stopped his patrol vehicle and ran toward the burglar shouting, \"Stop! Don't move or I'll shoot!\" Startled, the burglar dropped the television set and began to flee. Believing that the suspected burglar was about to escape, the security guard pulled out his service revolver and fired a bullet at the burglar. The shot struck the burglar in the leg, seriously wounding him. If the burglar asserts a claim against the owner for negligently failing to supervise those providing security services for the owner's property, the burglar will probably\nA. not prevail, because the security guard was acting in the course of his duties.\nB. prevail, because the burglar was unarmed when he was shot.\nC. prevail, because the security guard acted without proper authorization.\nD. prevail, because the security guard used excessive force.\nE. not prevail, because the owner was not present when the shooting occurred.\nF. not prevail, because the owner had discontinued protection services from the company when the shooting occurred.\nG. prevail, because the owner knew or had reason to know that the company provided an \"armed response\" to suspected trespassers.\nH. not prevail, because the owner had no control over the actions of the security guard.\nI. prevail, because the owner did not properly inform the company of the discontinued services.\nJ. not prevail, because the burglar was trespassing on private property.",
+        "response": "The owner had hired the company to provide security services for his property.\n\nThe owner had not informed the company that he had discontinued the services, which means that the company still had a duty to protect the property.\n\nThe security guard was acting within the scope of his employment when he shot the burglar.\n\nThe owner can be held liable for the company's actions, as he is vicariously liable for the company's negligence.\n\nThe key issue here is whether the owner had a duty to the burglar to properly supervise those providing security services for his property.\n\nThe answer is (G)."
+    },
+    "metadata": {
+        "subject": "law",
+        "source": "ori_mmlu-professional_law",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 2555,
+            "label": "question",
+            "text": "Question: A home security protection company provided protection services to property owners in the immediate area. The owner of a summer cottage in the area hired the company to provide 24- hour protection during the winter months when his home was unoccupied. According to the security arrangement, the company's uniformed guards would periodically patrol the property and, if necessary, provide an \"armed response\" to any unauthorized individuals who were found trespassing on the property. The company provided security protection to the owner's property for two years. The owner then notified the company that he was planning to sell the cottage. As a result, he requested that the company discontinue its home-protection service, effective immediately. Two weeks later, a burglar broke into the cottage and was ransacking it. As the burglar was exiting from the owner's house carrying a portable television set, he was seen by a security guard working for the company. The security guard, who was driving past the home on security patrol, had not been informed that the owner had discontinued protection services. The security guard suddenly stopped his patrol vehicle and ran toward the burglar shouting, \"Stop! Don't move or I'll shoot!\" Startled, the burglar dropped the television set and began to flee. Believing that the suspected burglar was about to escape, the security guard pulled out his service revolver and fired a bullet at the burglar. The shot struck the burglar in the leg, seriously wounding him. If the burglar asserts a claim against the owner for negligently failing to supervise those providing security services for the owner's property, the burglar will probably\nA. not prevail, because the security guard was acting in the course of his duties.\nB. prevail, because the burglar was unarmed when he was shot.\nC. prevail, because the security guard acted without proper authorization.\nD. prevail, because the security guard used excessive force.\nE. not prevail, because the owner was not present when the shooting occurred.\nF. not prevail, because the owner had discontinued protection services from the company when the shooting occurred.\nG. prevail, because the owner knew or had reason to know that the company provided an \"armed response\" to suspected trespassers.\nH. not prevail, because the owner had no control over the actions of the security guard.\nI. prevail, because the owner did not properly inform the company of the discontinued services.\nJ. not prevail, because the burglar was trespassing on private property.",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 80,
+            "label": "correct",
+            "text": "The owner had hired the company to provide security services for his property.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 80,
+            "end": 230,
+            "label": "correct",
+            "text": "The owner had not informed the company that he had discontinued the services, which means that the company still had a duty to protect the property.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 230,
+            "end": 322,
+            "label": "correct",
+            "text": "The security guard was acting within the scope of his employment when he shot the burglar.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 322,
+            "end": 437,
+            "label": "correct",
+            "text": "The owner can be held liable for the company's actions, as he is vicariously liable for the company's negligence.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 437,
+            "end": 578,
+            "label": "correct",
+            "text": "The key issue here is whether the owner had a duty to the burglar to properly supervise those providing security services for his property.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 578,
+            "end": 596,
+            "label": "first_error",
+            "text": "The answer is (G).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

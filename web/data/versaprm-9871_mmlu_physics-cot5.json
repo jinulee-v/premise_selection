@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-9871_mmlu_physics-cot5",
+    "raw_text": {
+        "question": "Question: What is the source of the material that causes meteor showers?\nA. Near-Earth asteroids gradually disintegrate and spread out along their orbital path. When the Earth passes through the orbit of an asteroid we are bombarded by sand-sized particles which cause a meteor shower.\nB. The nuclei of comets gradually disintegrate and spread out along the comet's orbital path. When the Earth passes through the orbit of a comet we are bombarded by sand-sized particles which cause a meteor shower.\nC. Meteor showers are caused by the disintegration of the Oort Cloud, a theoretical cloud of predominantly icy planetesimals proposed to surround the Sun.\nD. The nuclei of comets disintigrate as they enter Earth's atmosphere creating hundreds of bright meteors that appear to radiate from a central location in the sky.\nE. Near-Earth asteroids disintegrate as they enter Earth's atmosphere creating hundreds of bright meteors that appear to radiate from a single location in the sky.\nF. The material causing meteor showers comes from the dust and debris left behind by passing UFOs.\nG. Meteor showers are caused by the disintegration of space junk, or man-made debris in space, as it enters the Earth's atmosphere.\nH. Meteor showers are caused by the disintegration of asteroids within the Earth's atmosphere, resulting in a barrage of tiny, bright meteors.\nI. Meteor showers occur when Earth passes through the path of a disintegrated planet, causing a bombardment of various-sized particles.\nJ. Meteor showers are caused by the disintegration of the Earth's moon, due to extreme temperature variations, creating debris that enters the Earth's atmosphere.",
+        "response": "Meteor showers are caused by small particles that are ejected from comets.\n\nWhen a comet passes near the sun, its surface ice vaporizes, creating a large cloud of small particles.\n\nThese particles then orbit the sun along the comet's original path.\n\nWhen the Earth passes through this path, it encounters the small particles and they burn up in the atmosphere, creating a meteor shower.\n\nThe answer is (B)."
+    },
+    "metadata": {
+        "subject": "physics",
+        "source": "ori_mmlu-astronomy",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 1657,
+            "label": "question",
+            "text": "Question: What is the source of the material that causes meteor showers?\nA. Near-Earth asteroids gradually disintegrate and spread out along their orbital path. When the Earth passes through the orbit of an asteroid we are bombarded by sand-sized particles which cause a meteor shower.\nB. The nuclei of comets gradually disintegrate and spread out along the comet's orbital path. When the Earth passes through the orbit of a comet we are bombarded by sand-sized particles which cause a meteor shower.\nC. Meteor showers are caused by the disintegration of the Oort Cloud, a theoretical cloud of predominantly icy planetesimals proposed to surround the Sun.\nD. The nuclei of comets disintigrate as they enter Earth's atmosphere creating hundreds of bright meteors that appear to radiate from a central location in the sky.\nE. Near-Earth asteroids disintegrate as they enter Earth's atmosphere creating hundreds of bright meteors that appear to radiate from a single location in the sky.\nF. The material causing meteor showers comes from the dust and debris left behind by passing UFOs.\nG. Meteor showers are caused by the disintegration of space junk, or man-made debris in space, as it enters the Earth's atmosphere.\nH. Meteor showers are caused by the disintegration of asteroids within the Earth's atmosphere, resulting in a barrage of tiny, bright meteors.\nI. Meteor showers occur when Earth passes through the path of a disintegrated planet, causing a bombardment of various-sized particles.\nJ. Meteor showers are caused by the disintegration of the Earth's moon, due to extreme temperature variations, creating debris that enters the Earth's atmosphere.",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 76,
+            "label": "correct",
+            "text": "Meteor showers are caused by small particles that are ejected from comets.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 76,
+            "end": 181,
+            "label": "correct",
+            "text": "When a comet passes near the sun, its surface ice vaporizes, creating a large cloud of small particles.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 181,
+            "end": 250,
+            "label": "correct",
+            "text": "These particles then orbit the sun along the comet's original path.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 250,
+            "end": 388,
+            "label": "correct",
+            "text": "When the Earth passes through this path, it encounters the small particles and they burn up in the atmosphere, creating a meteor shower.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 388,
+            "end": 406,
+            "label": "correct",
+            "text": "The answer is (B).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

@@ -1,0 +1,133 @@
+{
+    "doc_id": "versaprm-7755_mmlu_math-cot7",
+    "raw_text": {
+        "question": "Question: Compute covariance of x=(1,2,3,4), y=(2,3,4,5)\nA. 0.50\nB. 2.00\nC. 3.00\nD. 0.75\nE. 1.25\nF. 1.67\nG. 1.00\nH. 0.98\nI. 2.50\nJ. 2.34",
+        "response": "We have \n$$\n\\begin{array}{c|c|c|c|c}\nx & y & x y & x^{2} & y^{2} \\\\\n\\hline\n1 & 2 & 2 & 1 & 4 \\\\\n2 & 3 & 6 & 4 & 9 \\\\\n3 & 4 & 12 & 9 & 16 \\\\\n4 & 5 & 20 & 16 & 25 \\\\\n\\hline\n\\sum x & 10 & 40 & 30 & 54 \\\\\n\\sum y & 14 &  &  &  \\\\\n\\hline\n\\end{array}\n$$\n\nThen \n$$\n\\begin{array}{l}\n\\sum x y=\\left(2+6+12+20\\right)=40 \\\\\n\\sum x^{2}=\\left(1+4+9+16\\right)=30 \\\\\n\\sum y^{2}=\\left(4+9+16+25\\right)=54 \\\\\n\\left(\\sum x\\right)\\left(\\sum y\\right)=\\left(10\\right)\\left(14\\right)=140 \\\\\n\\left(\\sum x^{2}\\right)\\left(\\sum y^{2}\\right)=\\left(30\\right)\\left(54\\right)=1620\n\\end{array}\n$$\n\n$\\sigma_{x}=x-\\bar{x}$\n$\\sigma_{y}=y-\\bar{y}$\n\n$\\sigma_{x} \\sigma_{y}=\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)$\n\n$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=\\sum x y-\\frac{\\left(\\sum x\\right)\\left(\\sum y\\right)}{n}$\n\n$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=40-\\frac{140}{4}$\n\n$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=40-35$\n\n$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=5$\n\nThen $\\text { Cov } x y=\\frac{\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)}{n}$\n\n$\\text { Cov } x y=\\frac{5}{4}$\n\n$\\text { Cov } x y=1.25$\n\nThe answer is (E)."
+    },
+    "metadata": {
+        "subject": "math",
+        "source": "theoremQA-Math",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 136,
+            "label": "question",
+            "text": "Question: Compute covariance of x=(1,2,3,4), y=(2,3,4,5)\nA. 0.50\nB. 2.00\nC. 3.00\nD. 0.75\nE. 1.25\nF. 1.67\nG. 1.00\nH. 0.98\nI. 2.50\nJ. 2.34",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 248,
+            "label": "correct",
+            "text": "We have \n$$\n\\begin{array}{c|c|c|c|c}\nx & y & x y & x^{2} & y^{2} \\\\\n\\hline\n1 & 2 & 2 & 1 & 4 \\\\\n2 & 3 & 6 & 4 & 9 \\\\\n3 & 4 & 12 & 9 & 16 \\\\\n4 & 5 & 20 & 16 & 25 \\\\\n\\hline\n\\sum x & 10 & 40 & 30 & 54 \\\\\n\\sum y & 14 &  &  &  \\\\\n\\hline\n\\end{array}\n$$",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 248,
+            "end": 567,
+            "label": "correct",
+            "text": "Then \n$$\n\\begin{array}{l}\n\\sum x y=\\left(2+6+12+20\\right)=40 \\\\\n\\sum x^{2}=\\left(1+4+9+16\\right)=30 \\\\\n\\sum y^{2}=\\left(4+9+16+25\\right)=54 \\\\\n\\left(\\sum x\\right)\\left(\\sum y\\right)=\\left(10\\right)\\left(14\\right)=140 \\\\\n\\left(\\sum x^{2}\\right)\\left(\\sum y^{2}\\right)=\\left(30\\right)\\left(54\\right)=1620\n\\end{array}\n$$",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 567,
+            "end": 614,
+            "label": "correct",
+            "text": "$\\sigma_{x}=x-\\bar{x}$\n$\\sigma_{y}=y-\\bar{y}$",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 614,
+            "end": 684,
+            "label": "correct",
+            "text": "$\\sigma_{x} \\sigma_{y}=\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)$",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 684,
+            "end": 794,
+            "label": "correct",
+            "text": "$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=\\sum x y-\\frac{\\left(\\sum x\\right)\\left(\\sum y\\right)}{n}$",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 794,
+            "end": 863,
+            "label": "correct",
+            "text": "$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=40-\\frac{140}{4}$",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 863,
+            "end": 921,
+            "label": "correct",
+            "text": "$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=40-35$",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 921,
+            "end": 975,
+            "label": "correct",
+            "text": "$\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)=5$",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 975,
+            "end": 1060,
+            "label": "first_error",
+            "text": "Then $\\text { Cov } x y=\\frac{\\sum\\left(x-\\bar{x}\\right)\\left(y-\\bar{y}\\right)}{n}$",
+            "source": "response"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 1060,
+            "end": 1093,
+            "label": null,
+            "text": "$\\text { Cov } x y=\\frac{5}{4}$",
+            "source": "response"
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 1093,
+            "end": 1119,
+            "label": null,
+            "text": "$\\text { Cov } x y=1.25$",
+            "source": "response"
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 1119,
+            "end": 1137,
+            "label": null,
+            "text": "The answer is (E).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

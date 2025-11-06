@@ -1,0 +1,124 @@
+{
+    "doc_id": "versaprm-4125_mmlu_chemistry-cot6",
+    "raw_text": {
+        "question": "Question: If the vapor pressure of ethyl alcohol, C_2H_5OH, is 0.132 atm at 34.9\u00b0C, and 0.526 atm at 63.5\u00b0C what do you predict it will be at 19.0\u00b0C?\nA. 0.3 atm\nB. 0.65 atm\nC. 0.08 atm\nD. 0.025 atm\nE. 0.2 atm\nF. 0.132 atm\nG. 0.0545 atm\nH. 0.7 atm\nI. 0.4 atm\nJ. 0.526 atm",
+        "response": "We can use the Clausius-Clapeyron equation to solve this problem.\n\nThe Clausius-Clapeyron equation is given by $$ln \\frac{P_2}{P_1} = \\frac{\\Delta H}{R} \\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$.\n\nWe have that $\\Delta H = \\Delta H_{vap}$, the heat of vaporization, which is a constant.\n\nWe have that $\\frac{\\Delta H}{R} = \\frac{\\Delta H_{vap}}{R}$.\n\nWe have that $\\frac{\\Delta H_{vap}}{R}$ is a constant that we can compute from the given data.\n\nWe are given that $P_1 = 0.132 \\; atm$, $T_1 = 34.9\u00b0C = 308.0 \\; K$, and $P_2 = 0.526 \\; atm$, $T_2 = 63.5\u00b0C = 336.7 \\; K$.\n\nWe can plug in the given values to compute $\\frac{\\Delta H_{vap}}{R}$.\n\nThe value of $\\frac{\\Delta H_{vap}}{R}$ is equal to $1611.7 \\; K$.\n\nWe can then use this value to compute the vapor pressure at 19.0\u00b0C, $T_3 = 292.2 \\; K$.\n\nPlugging in the values of $P_1 = 0.132 \\; atm$, $T_1 = 308.0 \\; K$, $T_3 = 292.2 \\; K$, and $\\frac{\\Delta H_{vap}}{R} = 1611.7 \\; K$, we find that $P_3 = 0.0545 \\; atm$.\n\nThe answer is (G)."
+    },
+    "metadata": {
+        "subject": "chemistry",
+        "source": "stemez-Chemistry",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 270,
+            "label": "question",
+            "text": "Question: If the vapor pressure of ethyl alcohol, C_2H_5OH, is 0.132 atm at 34.9\u00b0C, and 0.526 atm at 63.5\u00b0C what do you predict it will be at 19.0\u00b0C?\nA. 0.3 atm\nB. 0.65 atm\nC. 0.08 atm\nD. 0.025 atm\nE. 0.2 atm\nF. 0.132 atm\nG. 0.0545 atm\nH. 0.7 atm\nI. 0.4 atm\nJ. 0.526 atm",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 67,
+            "label": "correct",
+            "text": "We can use the Clausius-Clapeyron equation to solve this problem.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 67,
+            "end": 200,
+            "label": "correct",
+            "text": "The Clausius-Clapeyron equation is given by $$ln \\frac{P_2}{P_1} = \\frac{\\Delta H}{R} \\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 200,
+            "end": 290,
+            "label": "correct",
+            "text": "We have that $\\Delta H = \\Delta H_{vap}$, the heat of vaporization, which is a constant.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 290,
+            "end": 353,
+            "label": "correct",
+            "text": "We have that $\\frac{\\Delta H}{R} = \\frac{\\Delta H_{vap}}{R}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 353,
+            "end": 449,
+            "label": "correct",
+            "text": "We have that $\\frac{\\Delta H_{vap}}{R}$ is a constant that we can compute from the given data.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 449,
+            "end": 574,
+            "label": "correct",
+            "text": "We are given that $P_1 = 0.132 \\; atm$, $T_1 = 34.9\u00b0C = 308.0 \\; K$, and $P_2 = 0.526 \\; atm$, $T_2 = 63.5\u00b0C = 336.7 \\; K$.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 574,
+            "end": 646,
+            "label": "correct",
+            "text": "We can plug in the given values to compute $\\frac{\\Delta H_{vap}}{R}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 646,
+            "end": 714,
+            "label": "first_error",
+            "text": "The value of $\\frac{\\Delta H_{vap}}{R}$ is equal to $1611.7 \\; K$.",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 714,
+            "end": 803,
+            "label": null,
+            "text": "We can then use this value to compute the vapor pressure at 19.0\u00b0C, $T_3 = 292.2 \\; K$.",
+            "source": "response"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 803,
+            "end": 974,
+            "label": null,
+            "text": "Plugging in the values of $P_1 = 0.132 \\; atm$, $T_1 = 308.0 \\; K$, $T_3 = 292.2 \\; K$, and $\\frac{\\Delta H_{vap}}{R} = 1611.7 \\; K$, we find that $P_3 = 0.0545 \\; atm$.",
+            "source": "response"
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 974,
+            "end": 992,
+            "label": null,
+            "text": "The answer is (G).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

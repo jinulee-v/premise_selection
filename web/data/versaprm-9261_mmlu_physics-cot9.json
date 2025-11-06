@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-9261_mmlu_physics-cot9",
+    "raw_text": {
+        "question": "Question: Why can't we see the Sun's corona except during total solar eclipses?\nA. We can't see magnetic fields\nB. The corona is blocked by the Earth's atmosphere\nC. The corona is hidden by the Sun's photosphere\nD. The corona is made up mostly of charged particles which aren't luminous.\nE. The Sun's corona is actually invisible to the human eye\nF. It's too diffuse\nG. The corona is only visible at night\nH. It's too hot to emit visible light\nI. It's too far away from the Sun's surface\nJ. It's much too cool to emit visible light",
+        "response": "The corona is much hotter than the photosphere, but it is much less dense.\n\nAs a result, the corona emits very little visible light.\n\nHowever, the corona does emit X-rays, but these are not visible to the human eye.\n\nDuring a total solar eclipse, the moon blocks the bright light from the photosphere, allowing the faint light from the corona to be visible.\n\nThe answer is (H)."
+    },
+    "metadata": {
+        "subject": "physics",
+        "source": "ori_mmlu-astronomy",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 531,
+            "label": "question",
+            "text": "Question: Why can't we see the Sun's corona except during total solar eclipses?\nA. We can't see magnetic fields\nB. The corona is blocked by the Earth's atmosphere\nC. The corona is hidden by the Sun's photosphere\nD. The corona is made up mostly of charged particles which aren't luminous.\nE. The Sun's corona is actually invisible to the human eye\nF. It's too diffuse\nG. The corona is only visible at night\nH. It's too hot to emit visible light\nI. It's too far away from the Sun's surface\nJ. It's much too cool to emit visible light",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 76,
+            "label": "correct",
+            "text": "The corona is much hotter than the photosphere, but it is much less dense.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 76,
+            "end": 134,
+            "label": "correct",
+            "text": "As a result, the corona emits very little visible light.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 134,
+            "end": 217,
+            "label": "correct",
+            "text": "However, the corona does emit X-rays, but these are not visible to the human eye.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 217,
+            "end": 359,
+            "label": "correct",
+            "text": "During a total solar eclipse, the moon blocks the bright light from the photosphere, allowing the faint light from the corona to be visible.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 359,
+            "end": 377,
+            "label": "first_error",
+            "text": "The answer is (H).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

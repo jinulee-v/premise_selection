@@ -1,0 +1,115 @@
+{
+    "doc_id": "versaprm-4275_mmlu_chemistry-cot5",
+    "raw_text": {
+        "question": "Question: In an industrial process, nitrogen is heated to $500 \\mathrm{~K}$ at a constant volume of $1.000 \\mathrm{~m}^3$. The gas enters the container at $300 \\mathrm{~K}$ and $100 \\mathrm{~atm}$. The mass of the gas is $92.4 \\mathrm{~kg}$. Use the van der Waals equation to determine the approximate pressure of the gas at its working temperature of $500 \\mathrm{~K}$. For nitrogen, $a=1.352 \\mathrm{dm}^6 \\mathrm{~atm} \\mathrm{~mol}^{-2}, b=0.0387 \\mathrm{dm}^3 \\mathrm{~mol}^{-1}$.\nA.  140$\\text{atm}$\nB. 130$\\text{atm}$\nC. 120$\\text{atm}$\nD. 150$\\text{atm}$\nE. 180$\\text{atm}$\nF. 110$\\text{atm}$\nG. 170$\\text{atm}$\nH. 220$\\text{atm}$\nI. 160$\\text{atm}$\nJ. 200$\\text{atm}$",
+        "response": "First we will calculate the number of moles of nitrogen in the container. We know the mass of nitrogen, and its molar mass is 28 g/mol.\n\nTherefore, the number of moles is $92.4\\ \\text{kg} \\cdot \\frac{1000\\ \\text{g}}{1\\ \\text{kg}} \\cdot \\frac{1\\ \\text{mol}}{28\\ \\text{g}} = 3311\\ \\text{mol}$.\n\nNext, we will calculate the initial pressure using the ideal gas law: $PV=nRT$.\n\nRearranging for $P$, we get $P = \\frac{nRT}{V}$.\n\nSubstituting in the known values, we get $P_{initial} = \\frac{3311\\ \\text{mol}\\cdot 0.08206\\ \\text{L}\\cdot\\text{atm}\\ \\text{mol}^{-1}\\cdot \\text{K}^{-1} \\cdot 300\\ \\text{K}}{1.000\\ \\text{m}^3 \\cdot \\frac{1000\\ \\text{L}}{1\\ \\text{m}^3}} =  77.3\\ \\text{atm}$.\n\nTo calculate the van der Waals pressure, we will first need to convert the molar volume from $m^3$ to $dm^3$ by dividing by $1000$. This gives $1.000\\ \\text{m}^3 \\cdot \\frac{1000\\ \\text{L}}{1\\ \\text{m}^3} \\cdot \\frac{1000\\ \\text{cm}^3}{1\\ \\text{L}} \\cdot \\frac{1\\ \\text{dm}^3}{10\\ \\text{cm}^3} = 1.000 \\cdot 10^6\\ \\text{dm}^3$.\n\nThe van der Waals equation is $\\left(P + \\frac{an^2}{V^2} \\right) \\left(V - nb \\right) = nRT$.\n\nRearranging for $P$, we get $P = \\frac{nRT}{V - nb} - \\frac{an^2}{V^2}$.\n\nSubstituting in the known values, we get $P_{vdW} = \\frac{3311\\ \\text{mol}\\cdot 0.08206\\ \\text{L}\\cdot\\text{atm}\\ \\text{mol}^{-1}\\cdot \\text{K}^{-1} \\cdot 300\\ \\text{K}}{(1.000 \\cdot 10^6\\ \\text{dm}^3) - (3311\\ \\text{mol})(0.0387\\ \\text{dm}^3\\ \\text{mol}^{-1})} - \\frac{(1.352\\ \\text{dm}^6\\ \\text{atm}\\ \\text{mol}^{-2})(3311\\ \\text{mol})^2}{(1.000 \\cdot 10^6\\ \\text{dm}^3)^2} =  137.9\\ \\text{atm}$.\n\nThe answer is (A)."
+    },
+    "metadata": {
+        "subject": "chemistry",
+        "source": "scibench-atkins",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 676,
+            "label": "question",
+            "text": "Question: In an industrial process, nitrogen is heated to $500 \\mathrm{~K}$ at a constant volume of $1.000 \\mathrm{~m}^3$. The gas enters the container at $300 \\mathrm{~K}$ and $100 \\mathrm{~atm}$. The mass of the gas is $92.4 \\mathrm{~kg}$. Use the van der Waals equation to determine the approximate pressure of the gas at its working temperature of $500 \\mathrm{~K}$. For nitrogen, $a=1.352 \\mathrm{dm}^6 \\mathrm{~atm} \\mathrm{~mol}^{-2}, b=0.0387 \\mathrm{dm}^3 \\mathrm{~mol}^{-1}$.\nA.  140$\\text{atm}$\nB. 130$\\text{atm}$\nC. 120$\\text{atm}$\nD. 150$\\text{atm}$\nE. 180$\\text{atm}$\nF. 110$\\text{atm}$\nG. 170$\\text{atm}$\nH. 220$\\text{atm}$\nI. 160$\\text{atm}$\nJ. 200$\\text{atm}$",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 137,
+            "label": "correct",
+            "text": "First we will calculate the number of moles of nitrogen in the container. We know the mass of nitrogen, and its molar mass is 28 g/mol.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 137,
+            "end": 293,
+            "label": "correct",
+            "text": "Therefore, the number of moles is $92.4\\ \\text{kg} \\cdot \\frac{1000\\ \\text{g}}{1\\ \\text{kg}} \\cdot \\frac{1\\ \\text{mol}}{28\\ \\text{g}} = 3311\\ \\text{mol}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 293,
+            "end": 374,
+            "label": "correct",
+            "text": "Next, we will calculate the initial pressure using the ideal gas law: $PV=nRT$.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 374,
+            "end": 424,
+            "label": "correct",
+            "text": "Rearranging for $P$, we get $P = \\frac{nRT}{V}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 424,
+            "end": 683,
+            "label": "correct",
+            "text": "Substituting in the known values, we get $P_{initial} = \\frac{3311\\ \\text{mol}\\cdot 0.08206\\ \\text{L}\\cdot\\text{atm}\\ \\text{mol}^{-1}\\cdot \\text{K}^{-1} \\cdot 300\\ \\text{K}}{1.000\\ \\text{m}^3 \\cdot \\frac{1000\\ \\text{L}}{1\\ \\text{m}^3}} =  77.3\\ \\text{atm}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 683,
+            "end": 1012,
+            "label": "correct",
+            "text": "To calculate the van der Waals pressure, we will first need to convert the molar volume from $m^3$ to $dm^3$ by dividing by $1000$. This gives $1.000\\ \\text{m}^3 \\cdot \\frac{1000\\ \\text{L}}{1\\ \\text{m}^3} \\cdot \\frac{1000\\ \\text{cm}^3}{1\\ \\text{L}} \\cdot \\frac{1\\ \\text{dm}^3}{10\\ \\text{cm}^3} = 1.000 \\cdot 10^6\\ \\text{dm}^3$.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 1012,
+            "end": 1108,
+            "label": "correct",
+            "text": "The van der Waals equation is $\\left(P + \\frac{an^2}{V^2} \\right) \\left(V - nb \\right) = nRT$.",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 1108,
+            "end": 1182,
+            "label": "correct",
+            "text": "Rearranging for $P$, we get $P = \\frac{nRT}{V - nb} - \\frac{an^2}{V^2}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 1182,
+            "end": 1582,
+            "label": "correct",
+            "text": "Substituting in the known values, we get $P_{vdW} = \\frac{3311\\ \\text{mol}\\cdot 0.08206\\ \\text{L}\\cdot\\text{atm}\\ \\text{mol}^{-1}\\cdot \\text{K}^{-1} \\cdot 300\\ \\text{K}}{(1.000 \\cdot 10^6\\ \\text{dm}^3) - (3311\\ \\text{mol})(0.0387\\ \\text{dm}^3\\ \\text{mol}^{-1})} - \\frac{(1.352\\ \\text{dm}^6\\ \\text{atm}\\ \\text{mol}^{-2})(3311\\ \\text{mol})^2}{(1.000 \\cdot 10^6\\ \\text{dm}^3)^2} =  137.9\\ \\text{atm}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 1582,
+            "end": 1600,
+            "label": "correct",
+            "text": "The answer is (A).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

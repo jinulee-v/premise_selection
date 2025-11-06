@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-8947_mmlu_math-cot12",
+    "raw_text": {
+        "question": "Question: In triangle ABC, AB = 9x-1, CB = 5x-0.5, AC = 4x+1, and AC = CB. Find the measure of AB.\nA. 15\nB. 12.5\nC. 10.5\nD. 10\nE. 16\nF. 11\nG. 13.5\nH. 9.5\nI. 14\nJ. 8",
+        "response": "Given that AC = CB, we have $4x+1=5x-0.5$.\n\nNow, we solve the equation for $x$:\n \n4x+1 = 5x - 0.5\n4x - 5x = -0.5 - 1\n- x = -1.5\nx = 1.5\n\nNow that we have $x$, we substitute it into the equation for AB:\n\nAB = 9x - 1\nAB = 9(1.5) - 1\nAB = 13.5 - 1\nAB = 12.5\n\nThe answer is (B)."
+    },
+    "metadata": {
+        "subject": "math",
+        "source": "theoremQA-Math",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 164,
+            "label": "question",
+            "text": "Question: In triangle ABC, AB = 9x-1, CB = 5x-0.5, AC = 4x+1, and AC = CB. Find the measure of AB.\nA. 15\nB. 12.5\nC. 10.5\nD. 10\nE. 16\nF. 11\nG. 13.5\nH. 9.5\nI. 14\nJ. 8",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 44,
+            "label": "correct",
+            "text": "Given that AC = CB, we have $4x+1=5x-0.5$.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 44,
+            "end": 137,
+            "label": "correct",
+            "text": "Now, we solve the equation for $x$:\n \n4x+1 = 5x - 0.5\n4x - 5x = -0.5 - 1\n- x = -1.5\nx = 1.5",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 137,
+            "end": 203,
+            "label": "correct",
+            "text": "Now that we have $x$, we substitute it into the equation for AB:",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 203,
+            "end": 256,
+            "label": "correct",
+            "text": "AB = 9x - 1\nAB = 9(1.5) - 1\nAB = 13.5 - 1\nAB = 12.5",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 256,
+            "end": 274,
+            "label": "correct",
+            "text": "The answer is (B).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

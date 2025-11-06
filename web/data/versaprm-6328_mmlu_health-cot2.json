@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-6328_mmlu_health-cot2",
+    "raw_text": {
+        "question": "Question: A police officer carries out hundreds of traffic stops every year. When his supervisor is reviewing the officer\u2019s records for the past year, he notices that the officer is equally likely to stop people of various genders, ages, and races. However, he is significantly more likely to write tickets for middle-aged white males with dark hair and eyes. When confronted with this fact, the officer truthfully states that he has no idea why that is, and that it must simply be a coincidence. Unbeknownst to the officer, this behavior is tied to the fact that these men look like his father, with whom he had an abusive relationship as a child. What psychological framework would directly address the unconscious bias in his behavior? \nA. Gestalt\nB. Developmental\nC. Biopsychological\nD. Humanistic\nE. Cognitive behavioral\nF. Positive psychology\nG. Evolutionary\nH. Behaviorist\nI. Social cognitive\nJ. Psychoanalytic",
+        "response": "The behavior described by the officer is an example of unconscious bias, which is a concept rooted in psychoanalytic theory.\n\nIn psychoanalytic theory, unconscious bias is believed to arise from unresolved conflicts and repressed emotions from past experiences, which can influence an individual's behavior in subtle yet significant ways.\n\nThe officer's behavior, despite his lack of awareness, is linked to his unresolved feelings towards his abusive father, demonstrating the unconscious nature of his bias.\n\nThe psychoanalytic framework would directly address the unconscious bias in his behavior by exploring the underlying psychological dynamics and past experiences that contribute to it.\n\nThe answer is (J)."
+    },
+    "metadata": {
+        "subject": "health",
+        "source": "ori_mmlu-college_medicine",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 917,
+            "label": "question",
+            "text": "Question: A police officer carries out hundreds of traffic stops every year. When his supervisor is reviewing the officer\u2019s records for the past year, he notices that the officer is equally likely to stop people of various genders, ages, and races. However, he is significantly more likely to write tickets for middle-aged white males with dark hair and eyes. When confronted with this fact, the officer truthfully states that he has no idea why that is, and that it must simply be a coincidence. Unbeknownst to the officer, this behavior is tied to the fact that these men look like his father, with whom he had an abusive relationship as a child. What psychological framework would directly address the unconscious bias in his behavior? \nA. Gestalt\nB. Developmental\nC. Biopsychological\nD. Humanistic\nE. Cognitive behavioral\nF. Positive psychology\nG. Evolutionary\nH. Behaviorist\nI. Social cognitive\nJ. Psychoanalytic",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 126,
+            "label": "correct",
+            "text": "The behavior described by the officer is an example of unconscious bias, which is a concept rooted in psychoanalytic theory.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 126,
+            "end": 340,
+            "label": "correct",
+            "text": "In psychoanalytic theory, unconscious bias is believed to arise from unresolved conflicts and repressed emotions from past experiences, which can influence an individual's behavior in subtle yet significant ways.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 340,
+            "end": 511,
+            "label": "correct",
+            "text": "The officer's behavior, despite his lack of awareness, is linked to his unresolved feelings towards his abusive father, demonstrating the unconscious nature of his bias.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 511,
+            "end": 696,
+            "label": "correct",
+            "text": "The psychoanalytic framework would directly address the unconscious bias in his behavior by exploring the underlying psychological dynamics and past experiences that contribute to it.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 696,
+            "end": 714,
+            "label": "correct",
+            "text": "The answer is (J).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

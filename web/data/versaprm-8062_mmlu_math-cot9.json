@@ -1,0 +1,97 @@
+{
+    "doc_id": "versaprm-8062_mmlu_math-cot9",
+    "raw_text": {
+        "question": "Question: How many integers between 1 (included) and 100 (included) are divisible by either 2, 3, or 5?\nA. 82\nB. 60\nC. 80\nD. 68\nE. 74\nF. 72\nG. 85\nH. 50\nI. 78\nJ. 66",
+        "response": "We use the principle of inclusion-exclusion.\n\nWe want to find the number of integers that are divisible by either 2, 3, or 5.\n\nThere are 50 integers divisible by 2 (every 2nd integer between 1 and 100), 33 integers divisible by 3 (every 3rd integer between 1 and 100), and 20 integers divisible by 5 (every 5th integer between 1 and 100).\n\nThere are 16 integers divisible by both 2 and 3, 10 integers divisible by both 2 and 5, and 6 integers divisible by both 3 and 5.\n\nThere are 3 integers divisible by 2, 3, and 5.\n\nThen by the principle of inclusion-exclusion, the number of integers divisible by 2, 3, or 5 is\n\n$$\n\\begin{array}{l}\n50+33+20-16-10-6+3 \\\\\n=74\n\\end{array}\n$$\n\nThe answer is (E)."
+    },
+    "metadata": {
+        "subject": "math",
+        "source": "theoremQA-Math",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 163,
+            "label": "question",
+            "text": "Question: How many integers between 1 (included) and 100 (included) are divisible by either 2, 3, or 5?\nA. 82\nB. 60\nC. 80\nD. 68\nE. 74\nF. 72\nG. 85\nH. 50\nI. 78\nJ. 66",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 46,
+            "label": "correct",
+            "text": "We use the principle of inclusion-exclusion.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 46,
+            "end": 127,
+            "label": "correct",
+            "text": "We want to find the number of integers that are divisible by either 2, 3, or 5.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 127,
+            "end": 340,
+            "label": "correct",
+            "text": "There are 50 integers divisible by 2 (every 2nd integer between 1 and 100), 33 integers divisible by 3 (every 3rd integer between 1 and 100), and 20 integers divisible by 5 (every 5th integer between 1 and 100).",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 340,
+            "end": 471,
+            "label": "correct",
+            "text": "There are 16 integers divisible by both 2 and 3, 10 integers divisible by both 2 and 5, and 6 integers divisible by both 3 and 5.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 471,
+            "end": 519,
+            "label": "correct",
+            "text": "There are 3 integers divisible by 2, 3, and 5.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 519,
+            "end": 616,
+            "label": "correct",
+            "text": "Then by the principle of inclusion-exclusion, the number of integers divisible by 2, 3, or 5 is",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 616,
+            "end": 678,
+            "label": "correct",
+            "text": "$$\n\\begin{array}{l}\n50+33+20-16-10-6+3 \\\\\n=74\n\\end{array}\n$$",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 678,
+            "end": 696,
+            "label": "correct",
+            "text": "The answer is (E).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

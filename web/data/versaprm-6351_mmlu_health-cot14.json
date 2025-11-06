@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-6351_mmlu_health-cot14",
+    "raw_text": {
+        "question": "Question: The palatine processes begin to fuse at\nA. eight weeks post-fertilization.\nB. fourteen weeks post-fertilization.\nC. seven weeks post-fertilization.\nD. twelve weeks post-fertilization.\nE. four weeks post-fertilization.\nF. thirteen weeks post-fertilization.\nG. six weeks post-fertilization.\nH. ten weeks post-fertilization.\nI. eleven weeks post-fertilization.\nJ. nine weeks post-fertilization.",
+        "response": "The palatine processes start to fuse around 6-8 weeks post-fertilization.\n\nAt 6 weeks, the palatine processes start to fuse to form the secondary palate.\n\nThe fusion continues and completes by 8 weeks.\n\nTherefore, the palatine processes begin to fuse at approximately 6 weeks post-fertilization.\n\nThe answer is (G)."
+    },
+    "metadata": {
+        "subject": "health",
+        "source": "ori_mmlu-anatomy",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 401,
+            "label": "question",
+            "text": "Question: The palatine processes begin to fuse at\nA. eight weeks post-fertilization.\nB. fourteen weeks post-fertilization.\nC. seven weeks post-fertilization.\nD. twelve weeks post-fertilization.\nE. four weeks post-fertilization.\nF. thirteen weeks post-fertilization.\nG. six weeks post-fertilization.\nH. ten weeks post-fertilization.\nI. eleven weeks post-fertilization.\nJ. nine weeks post-fertilization.",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 75,
+            "label": "correct",
+            "text": "The palatine processes start to fuse around 6-8 weeks post-fertilization.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 75,
+            "end": 155,
+            "label": "correct",
+            "text": "At 6 weeks, the palatine processes start to fuse to form the secondary palate.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 155,
+            "end": 203,
+            "label": "correct",
+            "text": "The fusion continues and completes by 8 weeks.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 203,
+            "end": 297,
+            "label": "first_error",
+            "text": "Therefore, the palatine processes begin to fuse at approximately 6 weeks post-fertilization.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 297,
+            "end": 315,
+            "label": null,
+            "text": "The answer is (G).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

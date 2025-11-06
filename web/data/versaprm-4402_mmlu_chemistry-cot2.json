@@ -1,0 +1,106 @@
+{
+    "doc_id": "versaprm-4402_mmlu_chemistry-cot2",
+    "raw_text": {
+        "question": "Question: At 40\u00b0C the vapor pressures of two liquids A and B are 20 mm Hg and 40 mm Hg respectively. Liquid A has a normal boiling point of 120\u00b0C and that for liquid B is 140\u00b0C. Given that the heat of vaporization of A is 11.3 kcal/mole which of the following best describes the heat of vaporiza-tion of B(5.65 kcal/mole, 11.09 kcal/mole, 22.6 kcal/mole, less than 11.3 kcal/mole, greater than 11.09 kcal/mole, about the same, indeterminate because of insufficient data)?\nA. 22.6 kcal\nB. 5.65 kcal\nC. 7.58 kcal\nD. 11.3 kcal",
+        "response": "The Clapeyron equation relates the vapor pressure of a substance to the temperature and the heat of vaporization.\n\nWe can write the Clapeyron equation as:\n\n$\\ln\\left(\\frac{P_{2}}{P_{1}}\\right) = \\frac{\\Delta H_{vap}}{R} \\left(\\frac{1}{T_{1}} - \\frac{1}{T_{2}}\\right)$\n\nwhere $P_{1}$ and $P_{2}$ are the vapor pressures at temperatures $T_{1}$ and $T_{2}$, respectively, and $\\Delta H_{vap}$ is the heat of vaporization.\n\nWe can plug in the values for liquid A and solve for $\\Delta H_{vap}$.\n\n$\\ln\\left(\\frac{40}{20}\\right) = \\frac{\\Delta H_{vap}}{R} \\left(\\frac{1}{293.15} - \\frac{1}{393.15}\\right)$\n\nSimplifying and solving for $\\Delta H_{vap}$, we get $\\Delta H_{vap} = 11.09$ kcal/mole.\n\nSince the heat of vaporization of B is less than that of A, the heat of vaporization of B must be less than 11.09 kcal/mole.\n\nThe answer is (E)."
+    },
+    "metadata": {
+        "subject": "chemistry",
+        "source": "stemez-PhysicalChemistry",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 523,
+            "label": "question",
+            "text": "Question: At 40\u00b0C the vapor pressures of two liquids A and B are 20 mm Hg and 40 mm Hg respectively. Liquid A has a normal boiling point of 120\u00b0C and that for liquid B is 140\u00b0C. Given that the heat of vaporization of A is 11.3 kcal/mole which of the following best describes the heat of vaporiza-tion of B(5.65 kcal/mole, 11.09 kcal/mole, 22.6 kcal/mole, less than 11.3 kcal/mole, greater than 11.09 kcal/mole, about the same, indeterminate because of insufficient data)?\nA. 22.6 kcal\nB. 5.65 kcal\nC. 7.58 kcal\nD. 11.3 kcal",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 115,
+            "label": "correct",
+            "text": "The Clapeyron equation relates the vapor pressure of a substance to the temperature and the heat of vaporization.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 115,
+            "end": 156,
+            "label": "correct",
+            "text": "We can write the Clapeyron equation as:",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 156,
+            "end": 269,
+            "label": "correct",
+            "text": "$\\ln\\left(\\frac{P_{2}}{P_{1}}\\right) = \\frac{\\Delta H_{vap}}{R} \\left(\\frac{1}{T_{1}} - \\frac{1}{T_{2}}\\right)$",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 269,
+            "end": 421,
+            "label": "correct",
+            "text": "where $P_{1}$ and $P_{2}$ are the vapor pressures at temperatures $T_{1}$ and $T_{2}$, respectively, and $\\Delta H_{vap}$ is the heat of vaporization.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 421,
+            "end": 493,
+            "label": "correct",
+            "text": "We can plug in the values for liquid A and solve for $\\Delta H_{vap}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 493,
+            "end": 602,
+            "label": "correct",
+            "text": "$\\ln\\left(\\frac{40}{20}\\right) = \\frac{\\Delta H_{vap}}{R} \\left(\\frac{1}{293.15} - \\frac{1}{393.15}\\right)$",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 602,
+            "end": 692,
+            "label": "correct",
+            "text": "Simplifying and solving for $\\Delta H_{vap}$, we get $\\Delta H_{vap} = 11.09$ kcal/mole.",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 692,
+            "end": 818,
+            "label": "first_error",
+            "text": "Since the heat of vaporization of B is less than that of A, the heat of vaporization of B must be less than 11.09 kcal/mole.",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 818,
+            "end": 836,
+            "label": null,
+            "text": "The answer is (E).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

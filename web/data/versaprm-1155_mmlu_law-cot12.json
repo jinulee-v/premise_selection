@@ -1,0 +1,88 @@
+{
+    "doc_id": "versaprm-1155_mmlu_law-cot12",
+    "raw_text": {
+        "question": "Question: A man entered into a franchise contract with a company to operate a fast-food restaurant in a city. The company's national headquarters is located in another state. After the contract was executed, the man leased a store in a shopping center where he planned to open his restaurant. City public officials, however, refused to grant the man the necessary food vendor's license despite the fact that he could prove that his restaurant complied with all provisions of the municipal licensing ordinance. Section 1287 of the city food vending ordinance provides, in part, that \"a food vendor's license shall be issued to any applicant who properly complies with all of the health requirements of this ordinance. \" After the man's application for a food vendor's license was rejected, he requested a hearing to establish his qualifications. City officials refused this request and also declined to give any reason for his license denial. Which of the following is the strongest constitutional argument that the man may use to challenge the refusal of the city officials to grant him a food vendor's license?\nA. The city action infringes on his right to property without just compensation.\nB. The city action is a violation of his First Amendment rights.\nC. The city action is a breach of his Fourth Amendment rights.\nD. The city action denies him the right to work under the Thirteenth Amendment.\nE. The city action violates his right to fair trial.\nF. The city action constitutes an undue burden on the potential interstate commerce between the man and his out-of-state franchisor.\nG. The city action denies him procedural due process.\nH. The city action is an infringement on his right to equal protection under the law.\nI. The city action impairs the obligation of the man's contract with the franchising company and his rental agreement with the shopping mall.\nJ. The city action denies him substantive due process by arbitrarily regulating economic activity.",
+        "response": "The man has a contract to operate the restaurant, which is a legitimate business activity.\n\nThe city officials are refusing to grant him a necessary license, without providing a reason, which means he is being denied the opportunity to engage in his business activity.\n\nThis denial of a license without a hearing or explanation violates the man's right to procedural due process.\n\nProcedural due process is a constitutional right that requires government officials to provide a fair and reasonable process before depriving an individual of a significant property or liberty interest.\n\nThe man has a property interest in his business license, and the city officials are attempting to deprive him of that interest without providing him with notice or an opportunity to be heard.\n\nTherefore, the strongest constitutional argument the man can use to challenge the city officials' refusal to grant him a food vendor's license is that it violates his right to procedural due process.\n\nThe answer is (G)."
+    },
+    "metadata": {
+        "subject": "law",
+        "source": "ori_mmlu-professional_law",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 1967,
+            "label": "question",
+            "text": "Question: A man entered into a franchise contract with a company to operate a fast-food restaurant in a city. The company's national headquarters is located in another state. After the contract was executed, the man leased a store in a shopping center where he planned to open his restaurant. City public officials, however, refused to grant the man the necessary food vendor's license despite the fact that he could prove that his restaurant complied with all provisions of the municipal licensing ordinance. Section 1287 of the city food vending ordinance provides, in part, that \"a food vendor's license shall be issued to any applicant who properly complies with all of the health requirements of this ordinance. \" After the man's application for a food vendor's license was rejected, he requested a hearing to establish his qualifications. City officials refused this request and also declined to give any reason for his license denial. Which of the following is the strongest constitutional argument that the man may use to challenge the refusal of the city officials to grant him a food vendor's license?\nA. The city action infringes on his right to property without just compensation.\nB. The city action is a violation of his First Amendment rights.\nC. The city action is a breach of his Fourth Amendment rights.\nD. The city action denies him the right to work under the Thirteenth Amendment.\nE. The city action violates his right to fair trial.\nF. The city action constitutes an undue burden on the potential interstate commerce between the man and his out-of-state franchisor.\nG. The city action denies him procedural due process.\nH. The city action is an infringement on his right to equal protection under the law.\nI. The city action impairs the obligation of the man's contract with the franchising company and his rental agreement with the shopping mall.\nJ. The city action denies him substantive due process by arbitrarily regulating economic activity.",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 92,
+            "label": "correct",
+            "text": "The man has a contract to operate the restaurant, which is a legitimate business activity.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 92,
+            "end": 270,
+            "label": "correct",
+            "text": "The city officials are refusing to grant him a necessary license, without providing a reason, which means he is being denied the opportunity to engage in his business activity.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 270,
+            "end": 381,
+            "label": "correct",
+            "text": "This denial of a license without a hearing or explanation violates the man's right to procedural due process.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 381,
+            "end": 585,
+            "label": "correct",
+            "text": "Procedural due process is a constitutional right that requires government officials to provide a fair and reasonable process before depriving an individual of a significant property or liberty interest.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 585,
+            "end": 778,
+            "label": "correct",
+            "text": "The man has a property interest in his business license, and the city officials are attempting to deprive him of that interest without providing him with notice or an opportunity to be heard.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 778,
+            "end": 979,
+            "label": "correct",
+            "text": "Therefore, the strongest constitutional argument the man can use to challenge the city officials' refusal to grant him a food vendor's license is that it violates his right to procedural due process.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 979,
+            "end": 997,
+            "label": "correct",
+            "text": "The answer is (G).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

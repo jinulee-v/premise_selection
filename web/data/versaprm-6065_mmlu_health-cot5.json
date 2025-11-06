@@ -1,0 +1,79 @@
+{
+    "doc_id": "versaprm-6065_mmlu_health-cot5",
+    "raw_text": {
+        "question": "Question: Newborn infants in countries with limited access to safe water and low levels of education should be:\nA. Exclusively formula fed for six months\nB. Exclusively breast fed for six months\nC. Should receive both breast milk and other foods as tolerated in the first 6\nD. months",
+        "response": "Exclusive breastfeeding for the first six months of life is recommended by the World Health Organization (WHO) and the American Academy of Pediatrics (AAP) as the optimal method of infant feeding.\n\nThis is especially important in countries with limited access to safe water and low levels of education, where formula feeding may increase the risk of waterborne and infectious diseases.\n\nBreast milk provides the infant with all the necessary nutrients and antibodies for optimal growth and development.\n\nAdditionally, breastfeeding has been shown to have numerous health benefits for the mother, including reducing the risk of postpartum hemorrhage, breast and ovarian cancer, and anemia.\n\nTherefore, the best choice is to exclusively breastfeed for the first six months.\n\nThe answer is (B)."
+    },
+    "metadata": {
+        "subject": "health",
+        "source": "ori_mmlu-virology",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 283,
+            "label": "question",
+            "text": "Question: Newborn infants in countries with limited access to safe water and low levels of education should be:\nA. Exclusively formula fed for six months\nB. Exclusively breast fed for six months\nC. Should receive both breast milk and other foods as tolerated in the first 6\nD. months",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 198,
+            "label": "correct",
+            "text": "Exclusive breastfeeding for the first six months of life is recommended by the World Health Organization (WHO) and the American Academy of Pediatrics (AAP) as the optimal method of infant feeding.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 198,
+            "end": 387,
+            "label": "correct",
+            "text": "This is especially important in countries with limited access to safe water and low levels of education, where formula feeding may increase the risk of waterborne and infectious diseases.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 387,
+            "end": 504,
+            "label": "correct",
+            "text": "Breast milk provides the infant with all the necessary nutrients and antibodies for optimal growth and development.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 504,
+            "end": 690,
+            "label": "correct",
+            "text": "Additionally, breastfeeding has been shown to have numerous health benefits for the mother, including reducing the risk of postpartum hemorrhage, breast and ovarian cancer, and anemia.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 690,
+            "end": 773,
+            "label": "correct",
+            "text": "Therefore, the best choice is to exclusively breastfeed for the first six months.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 773,
+            "end": 791,
+            "label": "correct",
+            "text": "The answer is (B).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

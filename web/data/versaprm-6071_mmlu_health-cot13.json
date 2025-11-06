@@ -1,0 +1,88 @@
+{
+    "doc_id": "versaprm-6071_mmlu_health-cot13",
+    "raw_text": {
+        "question": "Question: What is urban yellow fever (YF)?\nA. A YF species that has adapted to new mosquitoes\nB. Part of a cycle of mosquitoes biting humans and monkeys in forested areas\nC. A YF virus that is transmitted through contaminated water in cities\nD. A YF species that has adapted to colder climates in urban areas\nE. A mutant of the YF virus\nF. Part of a cycle of mosquitoes biting only animals in cities\nG. A YF species that has adapted to rats in urban areas\nH. A YF virus that has lost its virulence in urban areas\nI. Part of a cycle of mosquitoes biting humans in cities\nJ. A YF virus that only affects humans in rural areas",
+        "response": "Urban yellow fever (YF) refers to the transmission of the yellow fever virus between humans through the bite of infected mosquitoes, specifically in urban areas.\n\nThis is different from the sylvatic cycle, which involves the transmission of the virus between nonhuman primates and mosquitoes in forested areas.\n\nGiven this, we can eliminate options that refer to transmission through contaminated water, rats, or animals in cities.\n\nWe can also eliminate options that refer to a mutant of the virus, a virus that has lost its virulence, or a virus that only affects humans in rural areas.\n\nWe are left with options that refer to transmission between humans in cities, which is the definition of urban yellow fever.\n\nThe correct option is (I), which refers to part of a cycle of mosquitoes biting humans in cities.\n\nThe answer is (I)."
+    },
+    "metadata": {
+        "subject": "health",
+        "source": "ori_mmlu-virology",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 623,
+            "label": "question",
+            "text": "Question: What is urban yellow fever (YF)?\nA. A YF species that has adapted to new mosquitoes\nB. Part of a cycle of mosquitoes biting humans and monkeys in forested areas\nC. A YF virus that is transmitted through contaminated water in cities\nD. A YF species that has adapted to colder climates in urban areas\nE. A mutant of the YF virus\nF. Part of a cycle of mosquitoes biting only animals in cities\nG. A YF species that has adapted to rats in urban areas\nH. A YF virus that has lost its virulence in urban areas\nI. Part of a cycle of mosquitoes biting humans in cities\nJ. A YF virus that only affects humans in rural areas",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 163,
+            "label": "correct",
+            "text": "Urban yellow fever (YF) refers to the transmission of the yellow fever virus between humans through the bite of infected mosquitoes, specifically in urban areas.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 163,
+            "end": 312,
+            "label": "correct",
+            "text": "This is different from the sylvatic cycle, which involves the transmission of the virus between nonhuman primates and mosquitoes in forested areas.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 312,
+            "end": 433,
+            "label": "correct",
+            "text": "Given this, we can eliminate options that refer to transmission through contaminated water, rats, or animals in cities.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 433,
+            "end": 590,
+            "label": "correct",
+            "text": "We can also eliminate options that refer to a mutant of the virus, a virus that has lost its virulence, or a virus that only affects humans in rural areas.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 590,
+            "end": 716,
+            "label": "correct",
+            "text": "We are left with options that refer to transmission between humans in cities, which is the definition of urban yellow fever.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 716,
+            "end": 815,
+            "label": "correct",
+            "text": "The correct option is (I), which refers to part of a cycle of mosquitoes biting humans in cities.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 815,
+            "end": 833,
+            "label": "correct",
+            "text": "The answer is (I).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

@@ -1,0 +1,115 @@
+{
+    "doc_id": "versaprm-4321_mmlu_chemistry-cot9",
+    "raw_text": {
+        "question": "Question: A chemist has a solution which contains Zn^2+ and Cu^2+, each at .02M. If the solution is made 1M in H_3O+ and H_2S is bubbled in until the solution is saturated, will a precipitate form? K_sp of ZnS = 1 \u00d7 10-^22, K_sp of CuS = 8 \u00d7 10-^37, and K_eq for H_2S, when saturated, = 1 \u00d7 10-^22 .\nA. Precipitation of CuS followed by ZnS\nB. Precipitation of ZnS\nC. Precipitation of CuS\nD. Precipitation of an insoluble compound other than ZnS or CuS\nE. Precipitation of ZnS followed by CuS\nF. No precipitation initially, but occurs upon further addition of H_2S\nG. Precipitation only at low pH values\nH. No precipitation\nI. Precipitation of both ZnS and CuS\nJ. Precipitation only at high temperatures",
+        "response": "We need to find the solubility of each compound, and then compare this to the concentration of each compound.\n\nThe solubility of ZnS can be calculated using the equation $K_{sp} = [Zn^{2+}][S^{2-}]$.\n\nSquaring both sides of this equation, we get $K_{sp}^{2} = [Zn^{2+}]^{2}[S^{2-}]^{2}$.\n\nThen solving for $[S^{2-}]$, we have $[S^{2-}] = \\frac{K_{sp}^{2}}{[Zn^{2+}]^{2}}$.\n\nSubstituting in the known values, we get $[S^{2-}] = \\frac{(1 \\times 10^{-22})^{2}}{(0.02)^{2}}$.\n\nThis is approximately $5 \\times 10^{-11}$.\n\nNow we can calculate the solubility of CuS in the same way. $[S^{2-}] = \\frac{(8 \\times 10^{-37})^{2}}{(0.02)^{2}}$.\n\nThis is approximately $2 \\times 10^{-15}$.\n\nSince $[S^{2-}]$ is larger for ZnS than for CuS, ZnS will precipitate first.\n\nThe answer is (B)."
+    },
+    "metadata": {
+        "subject": "chemistry",
+        "source": "stemez-Chemistry",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 702,
+            "label": "question",
+            "text": "Question: A chemist has a solution which contains Zn^2+ and Cu^2+, each at .02M. If the solution is made 1M in H_3O+ and H_2S is bubbled in until the solution is saturated, will a precipitate form? K_sp of ZnS = 1 \u00d7 10-^22, K_sp of CuS = 8 \u00d7 10-^37, and K_eq for H_2S, when saturated, = 1 \u00d7 10-^22 .\nA. Precipitation of CuS followed by ZnS\nB. Precipitation of ZnS\nC. Precipitation of CuS\nD. Precipitation of an insoluble compound other than ZnS or CuS\nE. Precipitation of ZnS followed by CuS\nF. No precipitation initially, but occurs upon further addition of H_2S\nG. Precipitation only at low pH values\nH. No precipitation\nI. Precipitation of both ZnS and CuS\nJ. Precipitation only at high temperatures",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 111,
+            "label": "correct",
+            "text": "We need to find the solubility of each compound, and then compare this to the concentration of each compound.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 111,
+            "end": 201,
+            "label": "correct",
+            "text": "The solubility of ZnS can be calculated using the equation $K_{sp} = [Zn^{2+}][S^{2-}]$.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 201,
+            "end": 289,
+            "label": "correct",
+            "text": "Squaring both sides of this equation, we get $K_{sp}^{2} = [Zn^{2+}]^{2}[S^{2-}]^{2}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 289,
+            "end": 374,
+            "label": "correct",
+            "text": "Then solving for $[S^{2-}]$, we have $[S^{2-}] = \\frac{K_{sp}^{2}}{[Zn^{2+}]^{2}}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 374,
+            "end": 473,
+            "label": "correct",
+            "text": "Substituting in the known values, we get $[S^{2-}] = \\frac{(1 \\times 10^{-22})^{2}}{(0.02)^{2}}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 473,
+            "end": 517,
+            "label": "correct",
+            "text": "This is approximately $5 \\times 10^{-11}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 517,
+            "end": 635,
+            "label": "correct",
+            "text": "Now we can calculate the solubility of CuS in the same way. $[S^{2-}] = \\frac{(8 \\times 10^{-37})^{2}}{(0.02)^{2}}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 635,
+            "end": 679,
+            "label": "correct",
+            "text": "This is approximately $2 \\times 10^{-15}$.",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 679,
+            "end": 757,
+            "label": "first_error",
+            "text": "Since $[S^{2-}]$ is larger for ZnS than for CuS, ZnS will precipitate first.",
+            "source": "response"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 757,
+            "end": 775,
+            "label": null,
+            "text": "The answer is (B).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

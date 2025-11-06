@@ -1,0 +1,142 @@
+{
+    "doc_id": "versaprm-10198_mmlu_physics-cot15",
+    "raw_text": {
+        "question": "Question: In aFizeautoothed-wheel experiment for obtaining the velocity of light, an eclipse of the source is first observed when the speed of the disk is 1500 rpm. (a) If the distance of the toothed wheel, which has 600 teeth, to the reflecting mirror is 4980 meters, find the velocity of light. (b) At what speed must the disk be moving for a second eclipse to be observed?\nA. 2.988 \u00d7 10^7 m/s and 3500 rpm\nB. 1.488 \u00d7 10^8 m/s and 6500 rpm\nC. 3.988 \u00d7 10^7 m/s and 2500 rpm\nD. 2.488 \u00d7 10^8 m/s and 3000 rpm\nE. 1.988 \u00d7 10^8 m/s and 4000 rpm\nF. 3.488 \u00d7 10^8 m/s and 5000 rpm\nG. 2.988 \u00d7 10^8 m/s and 4500 rpm\nH. 3.988 \u00d7 10^8 m/s and 6000 rpm\nI. 2.988 \u00d7 10^8 m/s and 7500 rpm\nJ. 1.988 \u00d7 10^8 m/s and 5500 rpm",
+        "response": "The distance between the toothed wheel and the mirror is 4980 meters.\n\nThe disk has 600 teeth.\n\nSo when the disk is rotating at 1500 rpm, the distance between the first and second eclipses is 600 * (1/1500) * 4980 = 1596 meters.\n\nThis distance is the speed of light times the time it takes for the disk to make one rotation.\n\nThe time for one rotation is (1/1500) hours, or (1/1500) * 3600 = 2.4 seconds.\n\nThe speed of light is then 1596 meters / 2.4 seconds = 2.988 * 10^7 m/s.\n\nThe second eclipse is observed when the distance between the first and second eclipses is 2 * 1596 meters = 3192 meters.\n\nSince the speed of light is the same as before, the time for one rotation of the disk must be 3192 / (2.988 * 10^7) = 0.1 seconds.\n\nThe new speed of the disk is then 1 / 0.1 = 10 rpm * 60 = 600 rpm.\n\nHowever, this speed is not among the answer choices, so we need to find another way to solve the problem.\n\nThe distance between the first and second eclipses is 2 * 600 * (1/1500) * 4980 = 3192 meters.\n\nThe speed of the disk is then (1/1500) * 4980 / (3192 / (2.988 * 10^7)) = 3000 rpm.\n\nThe answer is (D)."
+    },
+    "metadata": {
+        "subject": "physics",
+        "source": "stemez-Optics",
+        "generator": null,
+        "final_answer_correct": false
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 705,
+            "label": "question",
+            "text": "Question: In aFizeautoothed-wheel experiment for obtaining the velocity of light, an eclipse of the source is first observed when the speed of the disk is 1500 rpm. (a) If the distance of the toothed wheel, which has 600 teeth, to the reflecting mirror is 4980 meters, find the velocity of light. (b) At what speed must the disk be moving for a second eclipse to be observed?\nA. 2.988 \u00d7 10^7 m/s and 3500 rpm\nB. 1.488 \u00d7 10^8 m/s and 6500 rpm\nC. 3.988 \u00d7 10^7 m/s and 2500 rpm\nD. 2.488 \u00d7 10^8 m/s and 3000 rpm\nE. 1.988 \u00d7 10^8 m/s and 4000 rpm\nF. 3.488 \u00d7 10^8 m/s and 5000 rpm\nG. 2.988 \u00d7 10^8 m/s and 4500 rpm\nH. 3.988 \u00d7 10^8 m/s and 6000 rpm\nI. 2.988 \u00d7 10^8 m/s and 7500 rpm\nJ. 1.988 \u00d7 10^8 m/s and 5500 rpm",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 71,
+            "label": "correct",
+            "text": "The distance between the toothed wheel and the mirror is 4980 meters.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 71,
+            "end": 96,
+            "label": "correct",
+            "text": "The disk has 600 teeth.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 96,
+            "end": 230,
+            "label": "first_error",
+            "text": "So when the disk is rotating at 1500 rpm, the distance between the first and second eclipses is 600 * (1/1500) * 4980 = 1596 meters.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 230,
+            "end": 326,
+            "label": null,
+            "text": "This distance is the speed of light times the time it takes for the disk to make one rotation.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 326,
+            "end": 406,
+            "label": null,
+            "text": "The time for one rotation is (1/1500) hours, or (1/1500) * 3600 = 2.4 seconds.",
+            "source": "response"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 406,
+            "end": 480,
+            "label": null,
+            "text": "The speed of light is then 1596 meters / 2.4 seconds = 2.988 * 10^7 m/s.",
+            "source": "response"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 480,
+            "end": 602,
+            "label": null,
+            "text": "The second eclipse is observed when the distance between the first and second eclipses is 2 * 1596 meters = 3192 meters.",
+            "source": "response"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 602,
+            "end": 734,
+            "label": null,
+            "text": "Since the speed of light is the same as before, the time for one rotation of the disk must be 3192 / (2.988 * 10^7) = 0.1 seconds.",
+            "source": "response"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 734,
+            "end": 802,
+            "label": null,
+            "text": "The new speed of the disk is then 1 / 0.1 = 10 rpm * 60 = 600 rpm.",
+            "source": "response"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 802,
+            "end": 909,
+            "label": null,
+            "text": "However, this speed is not among the answer choices, so we need to find another way to solve the problem.",
+            "source": "response"
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 909,
+            "end": 1005,
+            "label": null,
+            "text": "The distance between the first and second eclipses is 2 * 600 * (1/1500) * 4980 = 3192 meters.",
+            "source": "response"
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 1005,
+            "end": 1090,
+            "label": null,
+            "text": "The speed of the disk is then (1/1500) * 4980 / (3192 / (2.988 * 10^7)) = 3000 rpm.",
+            "source": "response"
+        },
+        {
+            "id": "trace12",
+            "annotation": true,
+            "start": 1090,
+            "end": 1108,
+            "label": null,
+            "text": "The answer is (D).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-6528_mmlu_health-cot8",
+    "raw_text": {
+        "question": "Question: Which of the following is true about Addisons Disease?\nA. Results in frequent urination and thirst\nB. It is a result of an overactive thyroid gland\nC. High cholesterol levels are a common symptom\nD. It is a recognized cause of hypertension\nE. It is caused by excessive production of insulin\nF. It is a disease that affects the pituitary gland\nG. It is a form of cancer that affects the adrenal glands\nH. Diabetes is a complication\nI. Leads to generalized pigmentation\nJ. It is due to a deficiency of prolactin hormone",
+        "response": "Addison's disease is a condition that results from the deficiency of the adrenal glands, which can lead to various symptoms.\n\nOne of the key symptoms of Addison's disease is the presence of generalized pigmentation, particularly in the skin, mucous membranes, and the palmar creases.\n\nThis is due to the increased production of melanin in response to the deficiency of cortisol, which is produced by the adrenal glands.\n\nTherefore, the correct answer is that Addison's disease leads to generalized pigmentation.\n\nThe answer is (I)."
+    },
+    "metadata": {
+        "subject": "health",
+        "source": "ori_mmlu-clinical_knowledge",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 527,
+            "label": "question",
+            "text": "Question: Which of the following is true about Addisons Disease?\nA. Results in frequent urination and thirst\nB. It is a result of an overactive thyroid gland\nC. High cholesterol levels are a common symptom\nD. It is a recognized cause of hypertension\nE. It is caused by excessive production of insulin\nF. It is a disease that affects the pituitary gland\nG. It is a form of cancer that affects the adrenal glands\nH. Diabetes is a complication\nI. Leads to generalized pigmentation\nJ. It is due to a deficiency of prolactin hormone",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 126,
+            "label": "correct",
+            "text": "Addison's disease is a condition that results from the deficiency of the adrenal glands, which can lead to various symptoms.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 126,
+            "end": 285,
+            "label": "correct",
+            "text": "One of the key symptoms of Addison's disease is the presence of generalized pigmentation, particularly in the skin, mucous membranes, and the palmar creases.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 285,
+            "end": 421,
+            "label": "correct",
+            "text": "This is due to the increased production of melanin in response to the deficiency of cortisol, which is produced by the adrenal glands.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 421,
+            "end": 513,
+            "label": "correct",
+            "text": "Therefore, the correct answer is that Addison's disease leads to generalized pigmentation.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 513,
+            "end": 531,
+            "label": "correct",
+            "text": "The answer is (I).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}

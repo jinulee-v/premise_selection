@@ -1,0 +1,70 @@
+{
+    "doc_id": "versaprm-6047_mmlu_health-cot12",
+    "raw_text": {
+        "question": "Question: A 65-year-old woman presents with progressive muscle weakness that worsens throughout the day. She reports difficulty climbing stairs, brushing her hair, and speaking for extended periods. Symptoms improve with rest. She has recently experienced double vision and drooping eyelids, especially in the evening. Physical examination shows fatigable weakness of proximal muscles and ptosis. She has no sensory deficits. CT scan of the chest reveals a mass in the anterior mediastinum. Which of the following is the most likely anatomical site of the underlying pathology?\nA. Presynaptic neuromuscular junction\nB. Postsynaptic neuromuscular junction\nC. Motor cortex\nD. Peripheral nerves\nE. Muscle fibers\nF. Spinal cord\nG. Basal ganglia",
+        "response": "The patient's symptoms are characteristic of myasthenia gravis, a neuromuscular disorder.\n\nThe key features of this condition include fatigable weakness of proximal muscles, ptosis, and improvement with rest. These symptoms are consistent with impaired neuromuscular transmission.\n\nGiven that the patient has an underlying mass in the anterior mediastinum, which is often associated with thymoma, the most likely anatomical site of the underlying pathology is the postsynaptic neuromuscular junction.\n\nThe postsynaptic neuromuscular junction is the site where the acetylcholine receptors are located on the muscle fibers, and myasthenia gravis is an autoimmune disease that targets these receptors.\n\nThe answer is (B)."
+    },
+    "metadata": {
+        "subject": "health",
+        "source": "ori_mmlu-professional_medicine",
+        "generator": null,
+        "final_answer_correct": true
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 740,
+            "label": "question",
+            "text": "Question: A 65-year-old woman presents with progressive muscle weakness that worsens throughout the day. She reports difficulty climbing stairs, brushing her hair, and speaking for extended periods. Symptoms improve with rest. She has recently experienced double vision and drooping eyelids, especially in the evening. Physical examination shows fatigable weakness of proximal muscles and ptosis. She has no sensory deficits. CT scan of the chest reveals a mass in the anterior mediastinum. Which of the following is the most likely anatomical site of the underlying pathology?\nA. Presynaptic neuromuscular junction\nB. Postsynaptic neuromuscular junction\nC. Motor cortex\nD. Peripheral nerves\nE. Muscle fibers\nF. Spinal cord\nG. Basal ganglia",
+            "source": "question"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 91,
+            "label": "correct",
+            "text": "The patient's symptoms are characteristic of myasthenia gravis, a neuromuscular disorder.",
+            "source": "response"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 91,
+            "end": 282,
+            "label": "correct",
+            "text": "The key features of this condition include fatigable weakness of proximal muscles, ptosis, and improvement with rest. These symptoms are consistent with impaired neuromuscular transmission.",
+            "source": "response"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 282,
+            "end": 502,
+            "label": "correct",
+            "text": "Given that the patient has an underlying mass in the anterior mediastinum, which is often associated with thymoma, the most likely anatomical site of the underlying pathology is the postsynaptic neuromuscular junction.",
+            "source": "response"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 502,
+            "end": 700,
+            "label": "correct",
+            "text": "The postsynaptic neuromuscular junction is the site where the acetylcholine receptors are located on the muscle fibers, and myasthenia gravis is an autoimmune disease that targets these receptors.",
+            "source": "response"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 700,
+            "end": 718,
+            "label": "correct",
+            "text": "The answer is (B).",
+            "source": "response"
+        }
+    ],
+    "edges": []
+}
