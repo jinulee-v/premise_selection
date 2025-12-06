@@ -1,0 +1,111 @@
+{
+    "doc_id": "versaprm-3362_mmlu_biology-cot9",
+    "raw_text": {
+        "question": "Question: What hormone, if any, acts antagonistically to the parathormone?\nA. Estrogen\nB. Adrenaline\nC. Thyroxine\nD. Glucagon\nE. Growth Hormone\nF. Calcitonin\nG. Insulin\nH. Parathormone\nI. Prolactin\nJ. Cortisol",
+        "response": "Parathormone (PTH) acts to increase the calcium level in the blood.\n\nThis is achieved by increasing calcium release from bones, increasing calcium absorption in the intestines, and increasing calcium reabsorption in the kidneys.\n\nCalcitonin, on the other hand, has the opposite effect, decreasing the calcium level in the blood.\n\nThis is achieved by increasing calcium excretion in the urine and decreasing calcium release from bones.\n\nTherefore, calcitonin acts antagonistically to parathormone.\n\nThe answer is (F)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "stemez-Biology",
+        "subject": "biology",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 209,
+            "label": "first_error",
+            "text": "Question: What hormone, if any, acts antagonistically to the parathormone?\nA. Estrogen\nB. Adrenaline\nC. Thyroxine\nD. Glucagon\nE. Growth Hormone\nF. Calcitonin\nG. Insulin\nH. Parathormone\nI. Prolactin\nJ. Cortisol"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 69,
+            "label": "",
+            "text": "Parathormone (PTH) acts to increase the calcium level in the blood."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 69,
+            "end": 230,
+            "label": "",
+            "text": "This is achieved by increasing calcium release from bones, increasing calcium absorption in the intestines, and increasing calcium reabsorption in the kidneys."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 230,
+            "end": 330,
+            "label": "",
+            "text": "Calcitonin, on the other hand, has the opposite effect, decreasing the calcium level in the blood."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 330,
+            "end": 436,
+            "label": "",
+            "text": "This is achieved by increasing calcium excretion in the urine and decreasing calcium release from bones."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 436,
+            "end": 498,
+            "label": "",
+            "text": "Therefore, calcitonin acts antagonistically to parathormone."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 498,
+            "end": 516,
+            "label": "",
+            "text": "The answer is (F)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace2",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        }
+    ]
+}

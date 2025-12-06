@@ -1,0 +1,295 @@
+{
+    "doc_id": "versaprm-8426_mmlu_math-cot12",
+    "raw_text": {
+        "question": "Question: What's the value of a > 0, such that the tangent line to the graph of f(x) = (x^2) (e^(-x)) at x = a passes through the origin?\nA. 1/2\nB. sqrt(2) (the square root of 2, approximately 1.41421)\nC. 3\nD. e (Euler's number, approximately 2.71828)\nE. 1\nF. 5\nG. 2\nH. 4\nI. -1 (note that this is not a valid option since the question specifies a > 0)\nJ. 0",
+        "response": "Let $L$ be the tangent line to the graph of $f$ at $x=a$. Then $L$ passes through the origin if and only if $L$ passes through $(0,0)$. That is, if and only if $L(0)=0$. We have\n$$\n\\begin{aligned}\nL(x) & = f^{\\prime}(a) x+f(a) \\\\\n& =\\left(e^{-a} x^{2}-2 x e^{-a}\\right)+a^{2} e^{-a}\n\\end{aligned}\n$$\n\nSince $L(0)=0$ we have that $f(a)=0$ or $a^{2} e^{-a}=0$. Since $a>0$, $a^{2} e^{-a}=0$ is not possible. Hence $f(a)=0$ and so\n$$\n\\begin{aligned}\na^{2} e^{-a} & =0 \\\\\n\\Rightarrow \\quad a^{2} & =0 \\quad \\text { or } \\quad e^{-a}=0\n\\end{aligned}\n$$\n\nSince $a>0$, $e^{-a} \\neq 0$. Hence $a^{2}=0$ and so $a=0$.\n\nBut we are given that $a>0$, hence there is no value of $a$ such that $L$ passes through the origin.\n\nHowever, there is another way to get this answer. We could try to find the slope of $L$ and then solve for $a$. To find the slope of $L$ we need to find $f^{\\prime}(a)$. We have that $f^{\\prime}(x)=\\left(x^{2}-2 x\\right) e^{-x}$. Hence $f^{\\prime}(a)=\\left(a^{2}-2 a\\right) e^{-a}$. Thus\n$$\n\\begin{aligned}\nL(x) & =f^{\\prime}(a) x+f(a) \\\\\n& =\\left(a^{2}-2 a\\right) e^{-a} x+a^{2} e^{-a}\n\\end{aligned}\n$$\n\nSince $L(0)=0$ we have that $f(a)=0$ or $a^{2} e^{-a}=0$. Since $a>0$, $a^{2} e^{-a}=0$ is not possible. Hence $f(a)=0$ and so\n$$\n\\begin{aligned}\na^{2} e^{-a} & =0 \\\\\n\\Rightarrow \\quad a^{2} & =0 \\quad \\text { or } \\quad e^{-a}=0\n\\end{aligned}\n$$\n\nSince $a>0$, $e^{-a} \\neq 0$. Hence $a^{2}=0$ and so $a=0$.\n\nBut we are given that $a>0$, hence there is no value of $a$ such that $L$ passes through the origin.\n\nHowever, we could have found that there is no value of $a$ such that $L$ passes through the origin, by noticing that $f(x)=0$ if and only if $x=0$.\n\nHence $f(a)=0$ if and only if $a=0$. But $a>0$, hence $f(a) \\neq 0$ and so $L(0) \\neq 0$. Thus $L$ passes through the origin if and only if $L(0)=0$.\n\nWe know that $L(0)=0$ if and only if $f(a)=0$. But we also know that $f(a)=0$ if and only if $a=0$.\n\nBut we are given that $a>0$, hence there is no value of $a$ such that $L$ passes through the origin.\n\nHowever, since none of the options are 0, then the correct answer must be \"N/A\".\n\nThe answer is (G)."
+    },
+    "metadata": {
+        "final_answer_correct": false,
+        "generator": null,
+        "source": "theoremQA-Math",
+        "subject": "math",
+        "first_error_index": 0,
+        "first_error_reason": "The expression for the tangent line L(x) at x = a is incorrect. It should be L(x) = f(a) + f'(a)(x - a), not L(x) = f'(a)x + f(a). As written, they substitute f'(x) = (x^2 - 2x)e^{-x} directly with x in place of a, giving L(x) = (e^{-a}x^2 - 2xe^{-a}) + a^2 e^{-a}, which is not linear in x and therefore cannot be a tangent line. This foundational error invalidates the subsequent reasoning that uses this form of L(x)."
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 356,
+            "label": "correct",
+            "text": "Question: What's the value of a > 0, such that the tangent line to the graph of f(x) = (x^2) (e^(-x)) at x = a passes through the origin?\nA. 1/2\nB. sqrt(2) (the square root of 2, approximately 1.41421)\nC. 3\nD. e (Euler's number, approximately 2.71828)\nE. 1\nF. 5\nG. 2\nH. 4\nI. -1 (note that this is not a valid option since the question specifies a > 0)\nJ. 0"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 301,
+            "label": "first_error",
+            "text": "Let $L$ be the tangent line to the graph of $f$ at $x=a$. Then $L$ passes through the origin if and only if $L$ passes through $(0,0)$. That is, if and only if $L(0)=0$. We have\n$$\n\\begin{aligned}\nL(x) & = f^{\\prime}(a) x+f(a) \\\\\n& =\\left(e^{-a} x^{2}-2 x e^{-a}\\right)+a^{2} e^{-a}\n\\end{aligned}\n$$"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 301,
+            "end": 549,
+            "label": "",
+            "text": "Since $L(0)=0$ we have that $f(a)=0$ or $a^{2} e^{-a}=0$. Since $a>0$, $a^{2} e^{-a}=0$ is not possible. Hence $f(a)=0$ and so\n$$\n\\begin{aligned}\na^{2} e^{-a} & =0 \\\\\n\\Rightarrow \\quad a^{2} & =0 \\quad \\text { or } \\quad e^{-a}=0\n\\end{aligned}\n$$"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 549,
+            "end": 610,
+            "label": "",
+            "text": "Since $a>0$, $e^{-a} \\neq 0$. Hence $a^{2}=0$ and so $a=0$."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 610,
+            "end": 712,
+            "label": "",
+            "text": "But we are given that $a>0$, hence there is no value of $a$ such that $L$ passes through the origin."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 712,
+            "end": 1117,
+            "label": "",
+            "text": "However, there is another way to get this answer. We could try to find the slope of $L$ and then solve for $a$. To find the slope of $L$ we need to find $f^{\\prime}(a)$. We have that $f^{\\prime}(x)=\\left(x^{2}-2 x\\right) e^{-x}$. Hence $f^{\\prime}(a)=\\left(a^{2}-2 a\\right) e^{-a}$. Thus\n$$\n\\begin{aligned}\nL(x) & =f^{\\prime}(a) x+f(a) \\\\\n& =\\left(a^{2}-2 a\\right) e^{-a} x+a^{2} e^{-a}\n\\end{aligned}\n$$"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 1117,
+            "end": 1365,
+            "label": "",
+            "text": "Since $L(0)=0$ we have that $f(a)=0$ or $a^{2} e^{-a}=0$. Since $a>0$, $a^{2} e^{-a}=0$ is not possible. Hence $f(a)=0$ and so\n$$\n\\begin{aligned}\na^{2} e^{-a} & =0 \\\\\n\\Rightarrow \\quad a^{2} & =0 \\quad \\text { or } \\quad e^{-a}=0\n\\end{aligned}\n$$"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 1365,
+            "end": 1426,
+            "label": "",
+            "text": "Since $a>0$, $e^{-a} \\neq 0$. Hence $a^{2}=0$ and so $a=0$."
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 1426,
+            "end": 1528,
+            "label": "",
+            "text": "But we are given that $a>0$, hence there is no value of $a$ such that $L$ passes through the origin."
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 1528,
+            "end": 1677,
+            "label": "",
+            "text": "However, we could have found that there is no value of $a$ such that $L$ passes through the origin, by noticing that $f(x)=0$ if and only if $x=0$."
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 1677,
+            "end": 1828,
+            "label": "",
+            "text": "Hence $f(a)=0$ if and only if $a=0$. But $a>0$, hence $f(a) \\neq 0$ and so $L(0) \\neq 0$. Thus $L$ passes through the origin if and only if $L(0)=0$."
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 1828,
+            "end": 1929,
+            "label": "",
+            "text": "We know that $L(0)=0$ if and only if $f(a)=0$. But we also know that $f(a)=0$ if and only if $a=0$."
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 1929,
+            "end": 2031,
+            "label": "",
+            "text": "But we are given that $a>0$, hence there is no value of $a$ such that $L$ passes through the origin."
+        },
+        {
+            "id": "trace12",
+            "annotation": true,
+            "start": 2031,
+            "end": 2113,
+            "label": "",
+            "text": "However, since none of the options are 0, then the correct answer must be \"N/A\"."
+        },
+        {
+            "id": "trace13",
+            "annotation": true,
+            "start": 2113,
+            "end": 2131,
+            "label": "",
+            "text": "The answer is (G)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace7",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace8",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace0",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace0",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e19",
+            "from_node_id": "trace6",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e20",
+            "from_node_id": "trace9",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e21",
+            "from_node_id": "trace0",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e22",
+            "from_node_id": "trace10",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e23",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e24",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace12",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e25",
+            "from_node_id": "trace11",
+            "to_node_id": "trace12",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e26",
+            "from_node_id": "trace12",
+            "to_node_id": "trace13",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e27",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace13",
+            "label": "premise-conclusion"
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "doc_id": "versaprm-8761_mmlu_math-cot5",
+    "raw_text": {
+        "question": "Question: A $360-\\mathrm{lb}$ gorilla climbs a tree to a height of $20 \\mathrm{~ft}$. Find the work done if the gorilla reaches that height in 5 seconds.\nA. 6000 $\\mathrm{ft-lb}$\nB. 3600 $\\mathrm{ft-lb}$\nC. 14400 $\\mathrm{ft-lb}$\nD. 10800 $\\mathrm{ft-lb}$\nE. 4500 $\\mathrm{ft-lb}$\nF.  7200 $\\mathrm{ft-lb}$\nG. 9000 $\\mathrm{ft-lb}$\nH. 3000 $\\mathrm{ft-lb}$\nI. 1800 $\\mathrm{ft-lb}$\nJ. 21600 $\\mathrm{ft-lb}$",
+        "response": "We have the following data:\n\nGorilla's mass: $m=360 \\mathrm{lb}$.\nGorilla's height: $h=20 \\mathrm{ft}$.\nTime to climb: $\\Delta t=5 \\mathrm{s}$.\n\nThe force exerted on the gorilla is equal to its weight: $F=m g=360 \\mathrm{lb}$.\n\nThe work done is calculated as the integral of the force with respect to the displacement, $W=\\int F d h$. Since the force is constant, we can simplify the integral to $W=F h$.\n\nThus $W=360 \\mathrm{lb} \\times 20 \\mathrm{ft}=7200 \\mathrm{ft-lb}$.\n\nThe answer is (F)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "scibench-calculus",
+        "subject": "math",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 407,
+            "label": "first_error",
+            "text": "Question: A $360-\\mathrm{lb}$ gorilla climbs a tree to a height of $20 \\mathrm{~ft}$. Find the work done if the gorilla reaches that height in 5 seconds.\nA. 6000 $\\mathrm{ft-lb}$\nB. 3600 $\\mathrm{ft-lb}$\nC. 14400 $\\mathrm{ft-lb}$\nD. 10800 $\\mathrm{ft-lb}$\nE. 4500 $\\mathrm{ft-lb}$\nF.  7200 $\\mathrm{ft-lb}$\nG. 9000 $\\mathrm{ft-lb}$\nH. 3000 $\\mathrm{ft-lb}$\nI. 1800 $\\mathrm{ft-lb}$\nJ. 21600 $\\mathrm{ft-lb}$"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 29,
+            "label": "",
+            "text": "We have the following data:"
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 29,
+            "end": 145,
+            "label": "",
+            "text": "Gorilla's mass: $m=360 \\mathrm{lb}$.\nGorilla's height: $h=20 \\mathrm{ft}$.\nTime to climb: $\\Delta t=5 \\mathrm{s}$."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 145,
+            "end": 228,
+            "label": "",
+            "text": "The force exerted on the gorilla is equal to its weight: $F=m g=360 \\mathrm{lb}$."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 228,
+            "end": 406,
+            "label": "",
+            "text": "The work done is calculated as the integral of the force with respect to the displacement, $W=\\int F d h$. Since the force is constant, we can simplify the integral to $W=F h$."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 406,
+            "end": 475,
+            "label": "",
+            "text": "Thus $W=360 \\mathrm{lb} \\times 20 \\mathrm{ft}=7200 \\mathrm{ft-lb}$."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 475,
+            "end": 493,
+            "label": "",
+            "text": "The answer is (F)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace1",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace2",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        }
+    ]
+}

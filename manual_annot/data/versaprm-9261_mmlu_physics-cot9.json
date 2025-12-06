@@ -1,0 +1,97 @@
+{
+    "doc_id": "versaprm-9261_mmlu_physics-cot9",
+    "raw_text": {
+        "question": "Question: Why can't we see the Sun's corona except during total solar eclipses?\nA. We can't see magnetic fields\nB. The corona is blocked by the Earth's atmosphere\nC. The corona is hidden by the Sun's photosphere\nD. The corona is made up mostly of charged particles which aren't luminous.\nE. The Sun's corona is actually invisible to the human eye\nF. It's too diffuse\nG. The corona is only visible at night\nH. It's too hot to emit visible light\nI. It's too far away from the Sun's surface\nJ. It's much too cool to emit visible light",
+        "response": "The corona is much hotter than the photosphere, but it is much less dense.\n\nAs a result, the corona emits very little visible light.\n\nHowever, the corona does emit X-rays, but these are not visible to the human eye.\n\nDuring a total solar eclipse, the moon blocks the bright light from the photosphere, allowing the faint light from the corona to be visible.\n\nThe answer is (H)."
+    },
+    "metadata": {
+        "final_answer_correct": false,
+        "generator": null,
+        "source": "ori_mmlu-astronomy",
+        "subject": "physics",
+        "first_error_index": 1,
+        "first_error_reason": "The corona does emit visible light; it is faint because it is very diffuse, not because it emits very little visible light. The key issue is its low density and the overwhelming brightness of the photosphere, not a lack of visible emission. Consequently, step [4] is also wrong in choosing (H); the best choice is (F) combined with the fact that the photosphere outshines it."
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 531,
+            "label": "correct",
+            "text": "Question: Why can't we see the Sun's corona except during total solar eclipses?\nA. We can't see magnetic fields\nB. The corona is blocked by the Earth's atmosphere\nC. The corona is hidden by the Sun's photosphere\nD. The corona is made up mostly of charged particles which aren't luminous.\nE. The Sun's corona is actually invisible to the human eye\nF. It's too diffuse\nG. The corona is only visible at night\nH. It's too hot to emit visible light\nI. It's too far away from the Sun's surface\nJ. It's much too cool to emit visible light"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 76,
+            "label": "correct",
+            "text": "The corona is much hotter than the photosphere, but it is much less dense."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 76,
+            "end": 134,
+            "label": "first_error",
+            "text": "As a result, the corona emits very little visible light."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 134,
+            "end": 217,
+            "label": "",
+            "text": "However, the corona does emit X-rays, but these are not visible to the human eye."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 217,
+            "end": 359,
+            "label": "",
+            "text": "During a total solar eclipse, the moon blocks the bright light from the photosphere, allowing the faint light from the corona to be visible."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 359,
+            "end": 377,
+            "label": "",
+            "text": "The answer is (H)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e2",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace1",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        }
+    ]
+}

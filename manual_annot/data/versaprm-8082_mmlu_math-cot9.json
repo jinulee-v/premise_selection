@@ -1,0 +1,163 @@
+{
+    "doc_id": "versaprm-8082_mmlu_math-cot9",
+    "raw_text": {
+        "question": "Question: V is a vector space over the real field R. It is known that the vector group u_1, u_2, u_3 in V are linearly independent. Finding the rank of vector group ${u_1-\\lambda u_2, u_2-\\lambda u_3, u_3-\\lambda u_1}$ for $\\lambda=\\sqrt{5}$ and $\\lambda=1$ separately. Return the answer as a list.\nA. [1, 2]\nB. [2, 1]\nC. [3, 2]\nD. [1, 1]\nE. [2, 3]\nF. [3, 1]\nG. [3, 3]\nH. [1, 3]\nI. [2, 2]\nJ. [0, 2]",
+        "response": "We need to find the rank of the vector group ${u_1-\\lambda u_2, u_2-\\lambda u_3, u_3-\\lambda u_1}$ for $\\lambda=\\sqrt{5}$ and $\\lambda=1$ separately.\n\nFor $\\lambda = \\sqrt{5}$, the vector group becomes\n$u_1 - \\sqrt{5}u_2, u_2 - \\sqrt{5}u_3, u_3 - \\sqrt{5}u_1$.\n\nSince $u_1, u_2, u_3$ are linearly independent, the above three vectors are also linearly independent.\n\nTherefore, the rank of the vector group is 3.\n\nFor $\\lambda = 1$, the vector group becomes\n$u_1 - u_2, u_2 - u_3, u_3 - u_1$.\n\nSince $u_1, u_2, u_3$ are linearly independent, we can see that $u_1 - u_2, u_2 - u_3, u_3 - u_1$ are linearly dependent.\n\nTherefore, the rank of the vector group is 2.\n\nThe answer is (B)."
+    },
+    "metadata": {
+        "final_answer_correct": false,
+        "generator": null,
+        "source": "theoremQA-Math",
+        "subject": "math",
+        "first_error_index": 2,
+        "first_error_reason": "It is not automatically true that the three vectors u1 - sqrt(5)u2, u2 - sqrt(5)u3, u3 - sqrt(5)u1 are linearly independent just because u1, u2, u3 are linearly independent. One must check whether a1(u1 - \u03bbu2) + a2(u2 - \u03bbu3) + a3(u3 - \u03bbu1) = 0 implies a1 = a2 = a3 = 0. In fact, for \u03bb = sqrt(5), the only solution is the trivial one, so the conclusion rank = 3 is correct, but step [2] gives an invalid justification based solely on the independence of u1, u2, u3."
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 398,
+            "label": "correct",
+            "text": "Question: V is a vector space over the real field R. It is known that the vector group u_1, u_2, u_3 in V are linearly independent. Finding the rank of vector group ${u_1-\\lambda u_2, u_2-\\lambda u_3, u_3-\\lambda u_1}$ for $\\lambda=\\sqrt{5}$ and $\\lambda=1$ separately. Return the answer as a list.\nA. [1, 2]\nB. [2, 1]\nC. [3, 2]\nD. [1, 1]\nE. [2, 3]\nF. [3, 1]\nG. [3, 3]\nH. [1, 3]\nI. [2, 2]\nJ. [0, 2]"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 151,
+            "label": "correct",
+            "text": "We need to find the rank of the vector group ${u_1-\\lambda u_2, u_2-\\lambda u_3, u_3-\\lambda u_1}$ for $\\lambda=\\sqrt{5}$ and $\\lambda=1$ separately."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 151,
+            "end": 262,
+            "label": "correct",
+            "text": "For $\\lambda = \\sqrt{5}$, the vector group becomes\n$u_1 - \\sqrt{5}u_2, u_2 - \\sqrt{5}u_3, u_3 - \\sqrt{5}u_1$."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 262,
+            "end": 366,
+            "label": "first_error",
+            "text": "Since $u_1, u_2, u_3$ are linearly independent, the above three vectors are also linearly independent."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 366,
+            "end": 413,
+            "label": "",
+            "text": "Therefore, the rank of the vector group is 3."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 413,
+            "end": 493,
+            "label": "",
+            "text": "For $\\lambda = 1$, the vector group becomes\n$u_1 - u_2, u_2 - u_3, u_3 - u_1$."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 493,
+            "end": 616,
+            "label": "",
+            "text": "Since $u_1, u_2, u_3$ are linearly independent, we can see that $u_1 - u_2, u_2 - u_3, u_3 - u_1$ are linearly dependent."
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 616,
+            "end": 663,
+            "label": "",
+            "text": "Therefore, the rank of the vector group is 2."
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 663,
+            "end": 681,
+            "label": "",
+            "text": "The answer is (B)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace1",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace3",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "trace4",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        }
+    ]
+}
