@@ -1,0 +1,237 @@
+{
+    "doc_id": "versaprm-9949_mmlu_physics-cot8",
+    "raw_text": {
+        "question": "Question: Light of wavelength 400 nm is incident upon lithium (phi = 2.93 eV). Calculate the stopping potential in V.\nA. 0.87\nB. -0.23\nC. 0.07\nD. 0.57\nE. 0.97\nF. 0.37\nG. 0.47\nH. 0.17\nI. 1.07\nJ. 0.27",
+        "response": "The kinetic energy of the electron is equal to the energy of the photon minus the work function.\n\nThe energy of the photon is given by $E = hc/\\lambda$, where $h$ is Planck's constant, $c$ is the speed of light, and $\\lambda$ is the wavelength.\n\nThe work function is given as 2.93 eV.\n\nLet's first calculate the energy of the photon:\n\n$E = (6.626 \\times 10^{-34} \\, \\text{J s}) \\times (3 \\times 10^8 \\, \\text{m/s}) / (400 \\times 10^{-9} \\, \\text{m})$\n$E = 4.969 \\times 10^{-19} \\, \\text{J}$\n\nConverting to eV, we have:\n\n$E = 4.969 \\times 10^{-19} \\, \\text{J} / (1.602 \\times 10^{-19} \\, \\text{J/eV}) = 3.10 \\, \\text{eV}$\n\nThe kinetic energy of the electron is then:\n\n$KE = E - \\phi = 3.10 \\, \\text{eV} - 2.93 \\, \\text{eV} = 0.17 \\, \\text{eV}$\n\nThe stopping potential is equal to the kinetic energy of the electron in eV, so we have:\n\n$V_s = 0.17 \\, \\text{V}$\n\nThe answer is (H)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "theoremQA-Physics",
+        "subject": "physics",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 198,
+            "label": "first_error",
+            "text": "Question: Light of wavelength 400 nm is incident upon lithium (phi = 2.93 eV). Calculate the stopping potential in V.\nA. 0.87\nB. -0.23\nC. 0.07\nD. 0.57\nE. 0.97\nF. 0.37\nG. 0.47\nH. 0.17\nI. 1.07\nJ. 0.27"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 98,
+            "label": "",
+            "text": "The kinetic energy of the electron is equal to the energy of the photon minus the work function."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 98,
+            "end": 246,
+            "label": "",
+            "text": "The energy of the photon is given by $E = hc/\\lambda$, where $h$ is Planck's constant, $c$ is the speed of light, and $\\lambda$ is the wavelength."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 246,
+            "end": 286,
+            "label": "",
+            "text": "The work function is given as 2.93 eV."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 286,
+            "end": 335,
+            "label": "",
+            "text": "Let's first calculate the energy of the photon:"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 335,
+            "end": 492,
+            "label": "",
+            "text": "$E = (6.626 \\times 10^{-34} \\, \\text{J s}) \\times (3 \\times 10^8 \\, \\text{m/s}) / (400 \\times 10^{-9} \\, \\text{m})$\n$E = 4.969 \\times 10^{-19} \\, \\text{J}$"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 492,
+            "end": 520,
+            "label": "",
+            "text": "Converting to eV, we have:"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 520,
+            "end": 622,
+            "label": "",
+            "text": "$E = 4.969 \\times 10^{-19} \\, \\text{J} / (1.602 \\times 10^{-19} \\, \\text{J/eV}) = 3.10 \\, \\text{eV}$"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 622,
+            "end": 667,
+            "label": "",
+            "text": "The kinetic energy of the electron is then:"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 667,
+            "end": 744,
+            "label": "",
+            "text": "$KE = E - \\phi = 3.10 \\, \\text{eV} - 2.93 \\, \\text{eV} = 0.17 \\, \\text{eV}$"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 744,
+            "end": 834,
+            "label": "",
+            "text": "The stopping potential is equal to the kinetic energy of the electron in eV, so we have:"
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 834,
+            "end": 860,
+            "label": "",
+            "text": "$V_s = 0.17 \\, \\text{V}$"
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 860,
+            "end": 878,
+            "label": "",
+            "text": "The answer is (H)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace1",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace1",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace2",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace4",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace7",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "trace0",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace2",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace0",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace2",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace6",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace8",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e19",
+            "from_node_id": "trace9",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e20",
+            "from_node_id": "trace10",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e21",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        }
+    ]
+}

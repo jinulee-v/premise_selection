@@ -1,0 +1,255 @@
+{
+    "doc_id": "versaprm-8812_mmlu_math-cot15",
+    "raw_text": {
+        "question": "Question: Let M be a 5 x 5 real matrix. Exactly four of the following five conditions on M are equivalent to each other. Which of the five conditions is equivalent to NONE of the other four?\nA. The column vectors of M form a basis for R^5.\nB. For any two distinct column vectors u and v of M, the set {u, v} is linearly independent.\nC. The trace of M is nonzero.\nD. The eigenvalues of M are all nonzero.\nE. The homogeneous system Mx = 0 has only the trivial solution.\nF. The determinant of M is nonzero.\nG. The inverse of M exists.\nH. The transpose of M is equal to M.\nI. The rank of M is 5.\nJ. The system of equations Mx = b has a unique solution for each real 5 x 1 column vector b.",
+        "response": "If the column vectors of M form a basis for R^5, then the rank of M is 5.\n\nIf the rank of M is 5, then M is invertible.\n\nIf M is invertible, then M has a unique solution for each real 5 x 1 column vector b.\n\nIf the system of equations Mx = b has a unique solution for each real 5 x 1 column vector b, then the determinant of M is nonzero.\n\nIf the determinant of M is nonzero, then the eigenvalues of M are all nonzero.\n\nIf the eigenvalues of M are all nonzero, then the homogeneous system Mx = 0 has only the trivial solution.\n\nIf the homogeneous system Mx = 0 has only the trivial solution, then the column vectors of M are linearly independent.\n\nIf the column vectors of M are linearly independent, then the trace of M is nonzero.\n\nIf the trace of M is nonzero, then the transpose of M is equal to M.\n\nThus conditions A, E, F, G, and J are equivalent.\n\nCondition C is not equivalent to any of the other four conditions. It is possible for a matrix M with a nonzero trace to have a zero eigenvalue.\n\nThe answer is (C)."
+    },
+    "metadata": {
+        "final_answer_correct": false,
+        "generator": null,
+        "source": "ori_mmlu-college_mathematics",
+        "subject": "math",
+        "first_error_index": 1,
+        "first_error_reason": "From rank(M) = 5 (full rank for a 5x5 matrix) it is correct that M is invertible, so step [1] is fine. The first actual error occurs at step [3]: having a unique solution Mx = b for every b is equivalent to M being invertible, which implies det(M) \u2260 0, but the reasoning chain already used invertibility in step [2]. The more fundamental and earlier error, however, is at step [4]: det(M) \u2260 0 implies that the product of eigenvalues is nonzero, hence all eigenvalues are nonzero, so step [4] is correct. The first genuinely incorrect step is [5]: if all eigenvalues are nonzero, then M is invertible, which indeed implies that the homogeneous system Mx = 0 has only the trivial solution, so [5] is also correct. The first wrong step is [7]: linear independence of the columns (i.e., full rank) does not imply that the trace is nonzero. A 5x5 invertible matrix can have trace 0 (e.g., a diagonal matrix with entries 1, 1, 1, 1, -4). Therefore, step [7] is false, and all subsequent steps that rely on it are invalid."
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 684,
+            "label": "correct",
+            "text": "Question: Let M be a 5 x 5 real matrix. Exactly four of the following five conditions on M are equivalent to each other. Which of the five conditions is equivalent to NONE of the other four?\nA. The column vectors of M form a basis for R^5.\nB. For any two distinct column vectors u and v of M, the set {u, v} is linearly independent.\nC. The trace of M is nonzero.\nD. The eigenvalues of M are all nonzero.\nE. The homogeneous system Mx = 0 has only the trivial solution.\nF. The determinant of M is nonzero.\nG. The inverse of M exists.\nH. The transpose of M is equal to M.\nI. The rank of M is 5.\nJ. The system of equations Mx = b has a unique solution for each real 5 x 1 column vector b."
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 75,
+            "label": "correct",
+            "text": "If the column vectors of M form a basis for R^5, then the rank of M is 5."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 75,
+            "end": 121,
+            "label": "first_error",
+            "text": "If the rank of M is 5, then M is invertible."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 121,
+            "end": 208,
+            "label": "",
+            "text": "If M is invertible, then M has a unique solution for each real 5 x 1 column vector b."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 208,
+            "end": 340,
+            "label": "",
+            "text": "If the system of equations Mx = b has a unique solution for each real 5 x 1 column vector b, then the determinant of M is nonzero."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 340,
+            "end": 420,
+            "label": "",
+            "text": "If the determinant of M is nonzero, then the eigenvalues of M are all nonzero."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 420,
+            "end": 528,
+            "label": "",
+            "text": "If the eigenvalues of M are all nonzero, then the homogeneous system Mx = 0 has only the trivial solution."
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 528,
+            "end": 648,
+            "label": "",
+            "text": "If the homogeneous system Mx = 0 has only the trivial solution, then the column vectors of M are linearly independent."
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 648,
+            "end": 734,
+            "label": "",
+            "text": "If the column vectors of M are linearly independent, then the trace of M is nonzero."
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 734,
+            "end": 804,
+            "label": "",
+            "text": "If the trace of M is nonzero, then the transpose of M is equal to M."
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 804,
+            "end": 855,
+            "label": "",
+            "text": "Thus conditions A, E, F, G, and J are equivalent."
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 855,
+            "end": 1001,
+            "label": "",
+            "text": "Condition C is not equivalent to any of the other four conditions. It is possible for a matrix M with a nonzero trace to have a zero eigenvalue."
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 1001,
+            "end": 1019,
+            "label": "",
+            "text": "The answer is (C)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "trace0",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace1",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "trace2",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace3",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace4",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace5",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace6",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e19",
+            "from_node_id": "trace7",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e20",
+            "from_node_id": "trace8",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e21",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e22",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e23",
+            "from_node_id": "trace0",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        }
+    ]
+}

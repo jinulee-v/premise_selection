@@ -1,0 +1,399 @@
+{
+    "doc_id": "versaprm-8426_mmlu_math-cot10",
+    "raw_text": {
+        "question": "Question: What's the value of a > 0, such that the tangent line to the graph of f(x) = (x^2) (e^(-x)) at x = a passes through the origin?\nA. 1/2\nB. sqrt(2) (the square root of 2, approximately 1.41421)\nC. 3\nD. e (Euler's number, approximately 2.71828)\nE. 1\nF. 5\nG. 2\nH. 4\nI. -1 (note that this is not a valid option since the question specifies a > 0)\nJ. 0",
+        "response": "To solve this, we'll use the definition of the tangent line to a curve at a point $(a,f(a))$. The equation of the tangent line is given by $y - f(a) = f'(a)(x-a)$.\n\nWe want this tangent line to pass through the origin $(0,0)$, so we substitute $x=0$ and $y=0$ into the equation:\n\n$0 - f(a) = f'(a)(0-a)$\n\nSimplifying, we get:\n\n$-f(a) = -af'(a)$\n\nWe know that $f(x) = x^2e^{-x}$, so we need to find the derivative $f'(x)$:\n\n$f'(x) = 2xe^{-x} - x^2e^{-x}$\n\nEvaluating the derivative at $x=a$, we get:\n\n$f'(a) = 2ae^{-a} - a^2e^{-a}$\n\nNow we can substitute this into our earlier equation:\n\n$-f(a) = -a(2ae^{-a} - a^2e^{-a})$\n\nSimplifying, we get:\n\n$-a^2e^{-a} = -a(2ae^{-a} - a^2e^{-a})$\n\nDividing both sides by $-ae^{-a}$, we get:\n\n$-a = 2a - a^2$\n\nRearranging, we get:\n\n$a^2 - 2a = 0$\n\nFactoring, we get:\n\n$a(a-2) = 0$\n\nThis tells us that either $a=0$ or $a=2$. Since the problem specifies $a>0$, we must have $a=2$.\n\nThe answer is (G)."
+    },
+    "metadata": {
+        "final_answer_correct": false,
+        "generator": null,
+        "source": "theoremQA-Math",
+        "subject": "math",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 356,
+            "label": "first_error",
+            "text": "Question: What's the value of a > 0, such that the tangent line to the graph of f(x) = (x^2) (e^(-x)) at x = a passes through the origin?\nA. 1/2\nB. sqrt(2) (the square root of 2, approximately 1.41421)\nC. 3\nD. e (Euler's number, approximately 2.71828)\nE. 1\nF. 5\nG. 2\nH. 4\nI. -1 (note that this is not a valid option since the question specifies a > 0)\nJ. 0"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 165,
+            "label": "",
+            "text": "To solve this, we'll use the definition of the tangent line to a curve at a point $(a,f(a))$. The equation of the tangent line is given by $y - f(a) = f'(a)(x-a)$."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 165,
+            "end": 280,
+            "label": "",
+            "text": "We want this tangent line to pass through the origin $(0,0)$, so we substitute $x=0$ and $y=0$ into the equation:"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 280,
+            "end": 305,
+            "label": "",
+            "text": "$0 - f(a) = f'(a)(0-a)$"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 305,
+            "end": 327,
+            "label": "",
+            "text": "Simplifying, we get:"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 327,
+            "end": 346,
+            "label": "",
+            "text": "$-f(a) = -af'(a)$"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 346,
+            "end": 423,
+            "label": "",
+            "text": "We know that $f(x) = x^2e^{-x}$, so we need to find the derivative $f'(x)$:"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 423,
+            "end": 455,
+            "label": "",
+            "text": "$f'(x) = 2xe^{-x} - x^2e^{-x}$"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 455,
+            "end": 500,
+            "label": "",
+            "text": "Evaluating the derivative at $x=a$, we get:"
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 500,
+            "end": 532,
+            "label": "",
+            "text": "$f'(a) = 2ae^{-a} - a^2e^{-a}$"
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 532,
+            "end": 587,
+            "label": "",
+            "text": "Now we can substitute this into our earlier equation:"
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 587,
+            "end": 623,
+            "label": "",
+            "text": "$-f(a) = -a(2ae^{-a} - a^2e^{-a})$"
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 623,
+            "end": 645,
+            "label": "",
+            "text": "Simplifying, we get:"
+        },
+        {
+            "id": "trace12",
+            "annotation": true,
+            "start": 645,
+            "end": 686,
+            "label": "",
+            "text": "$-a^2e^{-a} = -a(2ae^{-a} - a^2e^{-a})$"
+        },
+        {
+            "id": "trace13",
+            "annotation": true,
+            "start": 686,
+            "end": 730,
+            "label": "",
+            "text": "Dividing both sides by $-ae^{-a}$, we get:"
+        },
+        {
+            "id": "trace14",
+            "annotation": true,
+            "start": 730,
+            "end": 747,
+            "label": "",
+            "text": "$-a = 2a - a^2$"
+        },
+        {
+            "id": "trace15",
+            "annotation": true,
+            "start": 747,
+            "end": 769,
+            "label": "",
+            "text": "Rearranging, we get:"
+        },
+        {
+            "id": "trace16",
+            "annotation": true,
+            "start": 769,
+            "end": 785,
+            "label": "",
+            "text": "$a^2 - 2a = 0$"
+        },
+        {
+            "id": "trace17",
+            "annotation": true,
+            "start": 785,
+            "end": 805,
+            "label": "",
+            "text": "Factoring, we get:"
+        },
+        {
+            "id": "trace18",
+            "annotation": true,
+            "start": 805,
+            "end": 819,
+            "label": "",
+            "text": "$a(a-2) = 0$"
+        },
+        {
+            "id": "trace19",
+            "annotation": true,
+            "start": 819,
+            "end": 917,
+            "label": "",
+            "text": "This tells us that either $a=0$ or $a=2$. Since the problem specifies $a>0$, we must have $a=2$."
+        },
+        {
+            "id": "trace20",
+            "annotation": true,
+            "start": 917,
+            "end": 935,
+            "label": "",
+            "text": "The answer is (G)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace2",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "trace4",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace4",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "trace6",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace7",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace8",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace0",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace8",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e19",
+            "from_node_id": "trace9",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e20",
+            "from_node_id": "trace0",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e21",
+            "from_node_id": "trace10",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e22",
+            "from_node_id": "trace11",
+            "to_node_id": "trace12",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e23",
+            "from_node_id": "trace10",
+            "to_node_id": "trace12",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e24",
+            "from_node_id": "trace12",
+            "to_node_id": "trace13",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e25",
+            "from_node_id": "trace12",
+            "to_node_id": "trace14",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e26",
+            "from_node_id": "trace13",
+            "to_node_id": "trace14",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e27",
+            "from_node_id": "trace14",
+            "to_node_id": "trace15",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e28",
+            "from_node_id": "trace14",
+            "to_node_id": "trace16",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e29",
+            "from_node_id": "trace16",
+            "to_node_id": "trace17",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e30",
+            "from_node_id": "trace17",
+            "to_node_id": "trace18",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e31",
+            "from_node_id": "trace16",
+            "to_node_id": "trace18",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e32",
+            "from_node_id": "trace16",
+            "to_node_id": "trace19",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e33",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace20",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e34",
+            "from_node_id": "trace19",
+            "to_node_id": "trace20",
+            "label": "premise-conclusion"
+        }
+    ]
+}

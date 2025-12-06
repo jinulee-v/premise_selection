@@ -1,0 +1,231 @@
+{
+    "doc_id": "versaprm-8808_mmlu_math-cot0",
+    "raw_text": {
+        "question": "Question: Let x_1 = 1 and x_(n+1) = sqrt(3+2x_n) for all positive integers n. If it is assumed that {x_n} converges, then lim x_n =\nA. sqrt(5)\nB. e\nC. 3\nD. 5\nE. 1\nF. 0\nG. sqrt(2)\nH. 2\nI. sqrt(7)\nJ. sqrt(3)",
+        "response": "Let $L$ be the limit of $x_n$ as $n \\to \\infty$.\n\nSince $\\{x_n\\}$ converges, $x_{n+1}$ and $x_n$ are close for large $n$.\n\nWe can assume that $x_n$ and $x_{n+1}$ are very close to $L$, and that $x_{n+1}$ is slightly larger than $x_n$.\n\nThus $L = \\sqrt{3 + 2L}$.\n\nWe have $L^2 = 3 + 2L$.\n\nThus $L^2 - 2L - 3 = 0$.\n\nThe quadratic formula gives $L = \\frac{2 \\pm \\sqrt{16}}{2} = \\frac{2 \\pm 4}{2}$.\n\nThus $L = 3$ or $L = -1$.\n\nWe know that $x_1 = 1 > 0$, and that each $x_n > 0$.\n\nHence $L > 0$.\n\nThus $L = 3$.\n\nThe answer is (C)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "ori_mmlu-college_mathematics",
+        "subject": "math",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 205,
+            "label": "first_error",
+            "text": "Question: Let x_1 = 1 and x_(n+1) = sqrt(3+2x_n) for all positive integers n. If it is assumed that {x_n} converges, then lim x_n =\nA. sqrt(5)\nB. e\nC. 3\nD. 5\nE. 1\nF. 0\nG. sqrt(2)\nH. 2\nI. sqrt(7)\nJ. sqrt(3)"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 50,
+            "label": "",
+            "text": "Let $L$ be the limit of $x_n$ as $n \\to \\infty$."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 50,
+            "end": 123,
+            "label": "",
+            "text": "Since $\\{x_n\\}$ converges, $x_{n+1}$ and $x_n$ are close for large $n$."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 123,
+            "end": 236,
+            "label": "",
+            "text": "We can assume that $x_n$ and $x_{n+1}$ are very close to $L$, and that $x_{n+1}$ is slightly larger than $x_n$."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 236,
+            "end": 263,
+            "label": "",
+            "text": "Thus $L = \\sqrt{3 + 2L}$."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 263,
+            "end": 288,
+            "label": "",
+            "text": "We have $L^2 = 3 + 2L$."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 288,
+            "end": 314,
+            "label": "",
+            "text": "Thus $L^2 - 2L - 3 = 0$."
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 314,
+            "end": 396,
+            "label": "",
+            "text": "The quadratic formula gives $L = \\frac{2 \\pm \\sqrt{16}}{2} = \\frac{2 \\pm 4}{2}$."
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 396,
+            "end": 423,
+            "label": "",
+            "text": "Thus $L = 3$ or $L = -1$."
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 423,
+            "end": 477,
+            "label": "",
+            "text": "We know that $x_1 = 1 > 0$, and that each $x_n > 0$."
+        },
+        {
+            "id": "trace9",
+            "annotation": true,
+            "start": 477,
+            "end": 493,
+            "label": "",
+            "text": "Hence $L > 0$."
+        },
+        {
+            "id": "trace10",
+            "annotation": true,
+            "start": 493,
+            "end": 508,
+            "label": "",
+            "text": "Thus $L = 3$."
+        },
+        {
+            "id": "trace11",
+            "annotation": true,
+            "start": 508,
+            "end": 526,
+            "label": "",
+            "text": "The answer is (C)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace8",
+            "to_node_id": "trace9",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace7",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace9",
+            "to_node_id": "trace10",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace10",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e19",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e20",
+            "from_node_id": "trace0",
+            "to_node_id": "trace11",
+            "label": "premise-conclusion"
+        }
+    ]
+}

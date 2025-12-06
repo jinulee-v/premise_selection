@@ -1,0 +1,20 @@
+{
+    "node_labels": [
+        "question",
+        "correct",
+        "first_error",
+        "propagated_error"
+    ],
+    "node_colors": {
+        "question": "#CAFFBF",
+        "correct": "#9BF6FF",
+        "first_error": "#FFADAD",
+        "propagated_error": "#FFD6A5"
+    },
+    "edge_labels": [
+        "premise-conclusion"
+    ],
+    "edge_colors": {
+        "premise-conclusion": "#D0E4FF"
+    }
+}

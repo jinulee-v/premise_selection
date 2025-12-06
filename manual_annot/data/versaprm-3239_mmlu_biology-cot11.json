@@ -1,0 +1,219 @@
+{
+    "doc_id": "versaprm-3239_mmlu_biology-cot11",
+    "raw_text": {
+        "question": "Question: In summer squash, spheroid fruit genes are dominant over genes for elongated fruit. A cross between two different homozygous spheroid-fruited varieties results in the following F_2: 89 disc62 spheroid11elongated Ascertain the fit of this data to a reasonable modified dihybrid ratio using chi-square analysis. Explain the pattern of inheritance, the F_1 genotype and phenotype, and the F_2 genotypes .\nA. The pattern of inheritance is codominance at one locus and complete dominance at the other.\nB. The data fits a 15:1 ratio, suggesting that one gene is completely dominant over the other and that there is no interaction between genes.\nC. The data fits a 3:1 ratio\nD. The data fits a 9:6:1 ratio with a 90 percent probability. There is complete dominance at both gene loci. Interaction between two dominants produces a new disc phenotype.\nE. The data fits a 12:3:1 ratio indicating dominant epistasis.\nF. The data fits a 9:3:3:1 ratio, which is the expected ratio for a typical dihybrid cross with no gene interaction.\nG. There is incomplete dominance at both gene loci\nH. Interaction between two recessive genes produces a new disc phenotype\nI. The data fits a 1:2:1 ratio suggesting incomplete dominance and no epistasis.\nJ. The F_2 genotypes indicate multiple alleles are involved at one gene locus.",
+        "response": "Given the information that spheroid fruit genes are dominant over genes for elongated fruit, we can infer that the alleles for spheroid fruit are S and the alleles for elongated fruit are s.\n\nIn a dihybrid cross, we would expect the following genotypes and phenotypes:\n\nSSSS: Spheroid\nSSsl: Spheroid\nSSss: Spheroid\nSsSS: Spheroid\nSssl: Spheroid\nSsss: Elongated\nsSSS: Spheroid\nsSSl: Spheroid\nsSSs: Spheroid\nssSS: Spheroid\nsssl: Spheroid\nssss: Elongated\n\nThe genotypes and phenotypes would be in a 9:3:3:1 ratio.\n\nUsing a chi-square analysis, we can determine that the data fits a 9:3:3:1 ratio with a 90 percent probability.\n\nThere is complete dominance at both gene loci and interaction between two dominants produces a new disc phenotype.\n\nThe F1 genotype and phenotype would be SSSS or SSSl (Spheroid).\n\nThe F2 genotypes would include SSSS, SSSl, SSsl, Ssss, sSSS, sSSl, sSSL, ssss, ssSl, sslL, and sssL.\n\nThe answer is (D)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "stemez-Genetics",
+        "subject": "biology",
+        "first_error_index": 1,
+        "first_error_reason": "Step [1] incorrectly sets up the genetic model. The question clearly involves a modified dihybrid ratio (disc, spheroid, elongated) implying two loci and three phenotypes, but step [1] proceeds as if there is only one locus (S/s) and then mislabels the situation as a dihybrid cross without introducing a second gene. All subsequent genotype listings and the 9:3:3:1 claim in steps [2]\u2013[4] are based on this incorrect setup."
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 1315,
+            "label": "correct",
+            "text": "Question: In summer squash, spheroid fruit genes are dominant over genes for elongated fruit. A cross between two different homozygous spheroid-fruited varieties results in the following F_2: 89 disc62 spheroid11elongated Ascertain the fit of this data to a reasonable modified dihybrid ratio using chi-square analysis. Explain the pattern of inheritance, the F_1 genotype and phenotype, and the F_2 genotypes .\nA. The pattern of inheritance is codominance at one locus and complete dominance at the other.\nB. The data fits a 15:1 ratio, suggesting that one gene is completely dominant over the other and that there is no interaction between genes.\nC. The data fits a 3:1 ratio\nD. The data fits a 9:6:1 ratio with a 90 percent probability. There is complete dominance at both gene loci. Interaction between two dominants produces a new disc phenotype.\nE. The data fits a 12:3:1 ratio indicating dominant epistasis.\nF. The data fits a 9:3:3:1 ratio, which is the expected ratio for a typical dihybrid cross with no gene interaction.\nG. There is incomplete dominance at both gene loci\nH. Interaction between two recessive genes produces a new disc phenotype\nI. The data fits a 1:2:1 ratio suggesting incomplete dominance and no epistasis.\nJ. The F_2 genotypes indicate multiple alleles are involved at one gene locus."
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 192,
+            "label": "correct",
+            "text": "Given the information that spheroid fruit genes are dominant over genes for elongated fruit, we can infer that the alleles for spheroid fruit are S and the alleles for elongated fruit are s."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 192,
+            "end": 270,
+            "label": "first_error",
+            "text": "In a dihybrid cross, we would expect the following genotypes and phenotypes:"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 270,
+            "end": 453,
+            "label": "",
+            "text": "SSSS: Spheroid\nSSsl: Spheroid\nSSss: Spheroid\nSsSS: Spheroid\nSssl: Spheroid\nSsss: Elongated\nsSSS: Spheroid\nsSSl: Spheroid\nsSSs: Spheroid\nssSS: Spheroid\nsssl: Spheroid\nssss: Elongated"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 453,
+            "end": 512,
+            "label": "",
+            "text": "The genotypes and phenotypes would be in a 9:3:3:1 ratio."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 512,
+            "end": 625,
+            "label": "",
+            "text": "Using a chi-square analysis, we can determine that the data fits a 9:3:3:1 ratio with a 90 percent probability."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 625,
+            "end": 741,
+            "label": "",
+            "text": "There is complete dominance at both gene loci and interaction between two dominants produces a new disc phenotype."
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 741,
+            "end": 806,
+            "label": "",
+            "text": "The F1 genotype and phenotype would be SSSS or SSSl (Spheroid)."
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 806,
+            "end": 908,
+            "label": "",
+            "text": "The F2 genotypes would include SSSS, SSSl, SSsl, Ssss, sSSS, sSSl, sSSL, ssss, ssSl, sslL, and sssL."
+        },
+        {
+            "id": "trace8",
+            "annotation": true,
+            "start": 908,
+            "end": 926,
+            "label": "",
+            "text": "The answer is (D)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "trace5",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace3",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace4",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace5",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace6",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e19",
+            "from_node_id": "trace7",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e20",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace8",
+            "label": "premise-conclusion"
+        }
+    ]
+}

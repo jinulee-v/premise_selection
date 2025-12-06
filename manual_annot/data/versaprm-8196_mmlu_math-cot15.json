@@ -1,0 +1,115 @@
+{
+    "doc_id": "versaprm-8196_mmlu_math-cot15",
+    "raw_text": {
+        "question": "Question: Given that each cone can contain two ice cream balls, how many different ice cream cones can you make if you have 6 flavors of ice cream and 5 types of cones?\nA. 120\nB. 150\nC. 60\nD. 210\nE. 360\nF. 300\nG. 72\nH. 240\nI. 180\nJ. 90",
+        "response": "Each ice cream cone must contain 2 ice cream balls. There are 6 flavors of ice cream, so we have ${6 \\choose 2} = 15$ different combinations of ice cream balls for each cone.\n\nThere are 5 types of cones, so we have 15 * 5 = 75 different ice cream cones.\n\nHowever, this is the total number of ice cream cones if the order of the ice cream balls in the cone matters.  Since it does not, we have 75 / 2 = 75 / 2 = 37.5, which we cannot have as we can only have a whole number of ice cream cones.\n\nWe were over counting by a factor of 2. Each ice cream cone is unique regardless of the order of the ice cream balls.  Thus the correct answer is 75 / 2 = 75 / 2 = 37.5 * 2 = 75, so we must have over counted by a factor of 2.\n\nThe answer is (J)."
+    },
+    "metadata": {
+        "final_answer_correct": false,
+        "generator": null,
+        "source": "theoremQA-Math",
+        "subject": "math",
+        "first_error_index": 0,
+        "first_error_reason": "Step [0] incorrectly uses C(6,2)=15, which counts only pairs of *distinct* flavors and assumes order does not matter. The problem does not forbid two scoops of the same flavor, so combinations like (chocolate, chocolate) must be included. The correct count of unordered pairs with repetition from 6 flavors is C(6+2-1,2)=C(7,2)=21, not 15."
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 235,
+            "label": "correct",
+            "text": "Question: Given that each cone can contain two ice cream balls, how many different ice cream cones can you make if you have 6 flavors of ice cream and 5 types of cones?\nA. 120\nB. 150\nC. 60\nD. 210\nE. 360\nF. 300\nG. 72\nH. 240\nI. 180\nJ. 90"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 176,
+            "label": "first_error",
+            "text": "Each ice cream cone must contain 2 ice cream balls. There are 6 flavors of ice cream, so we have ${6 \\choose 2} = 15$ different combinations of ice cream balls for each cone."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 176,
+            "end": 255,
+            "label": "",
+            "text": "There are 5 types of cones, so we have 15 * 5 = 75 different ice cream cones."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 255,
+            "end": 494,
+            "label": "",
+            "text": "However, this is the total number of ice cream cones if the order of the ice cream balls in the cone matters.  Since it does not, we have 75 / 2 = 75 / 2 = 37.5, which we cannot have as we can only have a whole number of ice cream cones."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 494,
+            "end": 721,
+            "label": "",
+            "text": "We were over counting by a factor of 2. Each ice cream cone is unique regardless of the order of the ice cream balls.  Thus the correct answer is 75 / 2 = 75 / 2 = 37.5 * 2 = 75, so we must have over counted by a factor of 2."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 721,
+            "end": 739,
+            "label": "",
+            "text": "The answer is (J)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        }
+    ]
+}

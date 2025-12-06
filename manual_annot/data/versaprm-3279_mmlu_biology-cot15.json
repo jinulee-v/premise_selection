@@ -1,0 +1,199 @@
+{
+    "doc_id": "versaprm-3279_mmlu_biology-cot15",
+    "raw_text": {
+        "question": "Question: Distinguish between copulation, insemination and fertilization.\nA. Copulation is the act of physical joining of two sex partners, insemination is the process of depositing semen into the vagina, and fertilization is the union of the male and female gametes to produce the zygote.\nB. Copulation is the process of depositing semen, insemination is the union of the sperm and egg, and fertilization is the act of physical joining.\nC. Fertilization is the act of physical joining of two sex partners, insemination is the union of male and female gametes, and copulation is the process of depositing semen into the reproductive tract.\nD. Insemination is the act of physical joining, fertilization is the union of male and female gametes, and copulation is the process of depositing semen into the vagina.\nE. Copulation is the union of male and female gametes, insemination is the act of physical joining, and fertilization is the process of depositing semen.\nF. Fertilization is the act of physical joining, insemination is the process of depositing semen, and copulation is the union of the male and female gametes.\nG. Fertilization is the process of depositing semen, copulation is the union of the sperm and egg, and insemination is the act of physical joining of two sex partners.\nH. Insemination is the act of physical joining, copulation is the process of depositing semen, and fertilization is the union of the sperm and egg.\nI. Copulation is the process of depositing semen, insemination is the act of physical joining, and fertilization is the union of the sperm and egg within the vagina.\nJ. Insemination is the union of the sperm and egg, copulation is the union of male and female gametes, and fertilization is the act of physical joining.",
+        "response": "To distinguish between these terms, we need to define each one.\n\nCopulation is the act of physical joining of two sex partners, which is the act of mating.\n\nInsemination is the process of depositing semen into the reproductive tract.\n\nFertilization is the union of the male and female gametes (sperm and egg) to produce the zygote.\n\nWe can now compare our definitions to the given options.\n\n(A) Copulation is the act of physical joining of two sex partners, insemination is the process of depositing semen into the vagina, and fertilization is the union of the male and female gametes to produce the zygote.\n\nThis matches our definitions of copulation, insemination, and fertilization.\n\nThe answer is (A)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "stemez-Biology",
+        "subject": "biology",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 1756,
+            "label": "first_error",
+            "text": "Question: Distinguish between copulation, insemination and fertilization.\nA. Copulation is the act of physical joining of two sex partners, insemination is the process of depositing semen into the vagina, and fertilization is the union of the male and female gametes to produce the zygote.\nB. Copulation is the process of depositing semen, insemination is the union of the sperm and egg, and fertilization is the act of physical joining.\nC. Fertilization is the act of physical joining of two sex partners, insemination is the union of male and female gametes, and copulation is the process of depositing semen into the reproductive tract.\nD. Insemination is the act of physical joining, fertilization is the union of male and female gametes, and copulation is the process of depositing semen into the vagina.\nE. Copulation is the union of male and female gametes, insemination is the act of physical joining, and fertilization is the process of depositing semen.\nF. Fertilization is the act of physical joining, insemination is the process of depositing semen, and copulation is the union of the male and female gametes.\nG. Fertilization is the process of depositing semen, copulation is the union of the sperm and egg, and insemination is the act of physical joining of two sex partners.\nH. Insemination is the act of physical joining, copulation is the process of depositing semen, and fertilization is the union of the sperm and egg.\nI. Copulation is the process of depositing semen, insemination is the act of physical joining, and fertilization is the union of the sperm and egg within the vagina.\nJ. Insemination is the union of the sperm and egg, copulation is the union of male and female gametes, and fertilization is the act of physical joining."
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 65,
+            "label": "",
+            "text": "To distinguish between these terms, we need to define each one."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 65,
+            "end": 157,
+            "label": "",
+            "text": "Copulation is the act of physical joining of two sex partners, which is the act of mating."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 157,
+            "end": 235,
+            "label": "",
+            "text": "Insemination is the process of depositing semen into the reproductive tract."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 235,
+            "end": 333,
+            "label": "",
+            "text": "Fertilization is the union of the male and female gametes (sperm and egg) to produce the zygote."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 333,
+            "end": 391,
+            "label": "",
+            "text": "We can now compare our definitions to the given options."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 391,
+            "end": 609,
+            "label": "",
+            "text": "(A) Copulation is the act of physical joining of two sex partners, insemination is the process of depositing semen into the vagina, and fertilization is the union of the male and female gametes to produce the zygote."
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 609,
+            "end": 687,
+            "label": "",
+            "text": "This matches our definitions of copulation, insemination, and fertilization."
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 687,
+            "end": 705,
+            "label": "",
+            "text": "The answer is (A)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "trace0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace1",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace2",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace1",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "trace2",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace3",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace5",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e18",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        }
+    ]
+}

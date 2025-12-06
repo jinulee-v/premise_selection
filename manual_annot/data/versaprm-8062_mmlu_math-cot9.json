@@ -1,0 +1,193 @@
+{
+    "doc_id": "versaprm-8062_mmlu_math-cot9",
+    "raw_text": {
+        "question": "Question: How many integers between 1 (included) and 100 (included) are divisible by either 2, 3, or 5?\nA. 82\nB. 60\nC. 80\nD. 68\nE. 74\nF. 72\nG. 85\nH. 50\nI. 78\nJ. 66",
+        "response": "We use the principle of inclusion-exclusion.\n\nWe want to find the number of integers that are divisible by either 2, 3, or 5.\n\nThere are 50 integers divisible by 2 (every 2nd integer between 1 and 100), 33 integers divisible by 3 (every 3rd integer between 1 and 100), and 20 integers divisible by 5 (every 5th integer between 1 and 100).\n\nThere are 16 integers divisible by both 2 and 3, 10 integers divisible by both 2 and 5, and 6 integers divisible by both 3 and 5.\n\nThere are 3 integers divisible by 2, 3, and 5.\n\nThen by the principle of inclusion-exclusion, the number of integers divisible by 2, 3, or 5 is\n\n$$\n\\begin{array}{l}\n50+33+20-16-10-6+3 \\\\\n=74\n\\end{array}\n$$\n\nThe answer is (E)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "theoremQA-Math",
+        "subject": "math",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 163,
+            "label": "first_error",
+            "text": "Question: How many integers between 1 (included) and 100 (included) are divisible by either 2, 3, or 5?\nA. 82\nB. 60\nC. 80\nD. 68\nE. 74\nF. 72\nG. 85\nH. 50\nI. 78\nJ. 66"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 46,
+            "label": "",
+            "text": "We use the principle of inclusion-exclusion."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 46,
+            "end": 127,
+            "label": "",
+            "text": "We want to find the number of integers that are divisible by either 2, 3, or 5."
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 127,
+            "end": 340,
+            "label": "",
+            "text": "There are 50 integers divisible by 2 (every 2nd integer between 1 and 100), 33 integers divisible by 3 (every 3rd integer between 1 and 100), and 20 integers divisible by 5 (every 5th integer between 1 and 100)."
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 340,
+            "end": 471,
+            "label": "",
+            "text": "There are 16 integers divisible by both 2 and 3, 10 integers divisible by both 2 and 5, and 6 integers divisible by both 3 and 5."
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 471,
+            "end": 519,
+            "label": "",
+            "text": "There are 3 integers divisible by 2, 3, and 5."
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 519,
+            "end": 616,
+            "label": "",
+            "text": "Then by the principle of inclusion-exclusion, the number of integers divisible by 2, 3, or 5 is"
+        },
+        {
+            "id": "trace6",
+            "annotation": true,
+            "start": 616,
+            "end": 678,
+            "label": "",
+            "text": "$$\n\\begin{array}{l}\n50+33+20-16-10-6+3 \\\\\n=74\n\\end{array}\n$$"
+        },
+        {
+            "id": "trace7",
+            "annotation": true,
+            "start": 678,
+            "end": 696,
+            "label": "",
+            "text": "The answer is (E)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace0",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "trace0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "trace0",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e10",
+            "from_node_id": "trace2",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e11",
+            "from_node_id": "trace3",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e12",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e13",
+            "from_node_id": "trace5",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e14",
+            "from_node_id": "trace2",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e15",
+            "from_node_id": "trace3",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e16",
+            "from_node_id": "trace4",
+            "to_node_id": "trace6",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e17",
+            "from_node_id": "trace6",
+            "to_node_id": "trace7",
+            "label": "premise-conclusion"
+        }
+    ]
+}

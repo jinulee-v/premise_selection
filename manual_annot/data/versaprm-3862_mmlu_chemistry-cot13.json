@@ -1,0 +1,129 @@
+{
+    "doc_id": "versaprm-3862_mmlu_chemistry-cot13",
+    "raw_text": {
+        "question": "Question: Two gases,HBrand CH_4, have molecular weights 81 and 16, respectively. TheHBreffuses through a certain small opening at the rate of 4 ml/sec. At what rate will the CH_4 effuse through the same opening?\nA. 12 ml/sec\nB. 16 ml/sec\nC. 24 ml/sec\nD. 18 ml/sec\nE. 32 ml/sec\nF. 4 ml/sec\nG. 2 ml/sec\nH. 81 ml/sec\nI. 6 ml/sec\nJ. 9 ml/sec",
+        "response": "The rate of effusion of a gas is inversely proportional to the square root of its molecular weight.\n\nWe can use Graham's Law of Effusion to solve this problem:\n\n$\\frac{rate_{HBr}}{rate_{CH_4}} = \\sqrt{\\frac{MW_{CH_4}}{MW_{HBr}}}$\n\n$\\frac{4\\, ml/sec}{rate_{CH_4}} = \\sqrt{\\frac{16}{81}}$\n\n$rate_{CH_4} = \\frac{4\\, ml/sec}{\\sqrt{\\frac{16}{81}}} = \\frac{4\\, ml/sec}{\\frac{4}{9}} = 9\\, ml/sec$\n\nThe answer is (J)."
+    },
+    "metadata": {
+        "final_answer_correct": true,
+        "generator": null,
+        "source": "stemez-Chemistry",
+        "subject": "chemistry",
+        "first_error_index": -1,
+        "first_error_reason": ""
+    },
+    "nodes": [
+        {
+            "id": "ctx0",
+            "annotation": false,
+            "start": 0,
+            "end": 337,
+            "label": "first_error",
+            "text": "Question: Two gases,HBrand CH_4, have molecular weights 81 and 16, respectively. TheHBreffuses through a certain small opening at the rate of 4 ml/sec. At what rate will the CH_4 effuse through the same opening?\nA. 12 ml/sec\nB. 16 ml/sec\nC. 24 ml/sec\nD. 18 ml/sec\nE. 32 ml/sec\nF. 4 ml/sec\nG. 2 ml/sec\nH. 81 ml/sec\nI. 6 ml/sec\nJ. 9 ml/sec"
+        },
+        {
+            "id": "trace0",
+            "annotation": true,
+            "start": 0,
+            "end": 101,
+            "label": "",
+            "text": "The rate of effusion of a gas is inversely proportional to the square root of its molecular weight."
+        },
+        {
+            "id": "trace1",
+            "annotation": true,
+            "start": 101,
+            "end": 161,
+            "label": "",
+            "text": "We can use Graham's Law of Effusion to solve this problem:"
+        },
+        {
+            "id": "trace2",
+            "annotation": true,
+            "start": 161,
+            "end": 231,
+            "label": "",
+            "text": "$\\frac{rate_{HBr}}{rate_{CH_4}} = \\sqrt{\\frac{MW_{CH_4}}{MW_{HBr}}}$"
+        },
+        {
+            "id": "trace3",
+            "annotation": true,
+            "start": 231,
+            "end": 288,
+            "label": "",
+            "text": "$\\frac{4\\, ml/sec}{rate_{CH_4}} = \\sqrt{\\frac{16}{81}}$"
+        },
+        {
+            "id": "trace4",
+            "annotation": true,
+            "start": 288,
+            "end": 391,
+            "label": "",
+            "text": "$rate_{CH_4} = \\frac{4\\, ml/sec}{\\sqrt{\\frac{16}{81}}} = \\frac{4\\, ml/sec}{\\frac{4}{9}} = 9\\, ml/sec$"
+        },
+        {
+            "id": "trace5",
+            "annotation": true,
+            "start": 391,
+            "end": 409,
+            "label": "",
+            "text": "The answer is (J)."
+        }
+    ],
+    "edges": [
+        {
+            "id": "e1",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e2",
+            "from_node_id": "trace0",
+            "to_node_id": "trace1",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e3",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e4",
+            "from_node_id": "trace1",
+            "to_node_id": "trace2",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e5",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e6",
+            "from_node_id": "trace2",
+            "to_node_id": "trace3",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e7",
+            "from_node_id": "trace3",
+            "to_node_id": "trace4",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e8",
+            "from_node_id": "ctx0",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        },
+        {
+            "id": "e9",
+            "from_node_id": "trace4",
+            "to_node_id": "trace5",
+            "label": "premise-conclusion"
+        }
+    ]
+}
