@@ -10,7 +10,7 @@
         "source": "scibench-calculus",
         "subject": "math",
         "first_error_index": 5,
-        "first_error_reason": "The height of the tetrahedron is incorrectly computed using h^2 = 5^2 - 3^2. In a tetrahedron with three mutually perpendicular edges of lengths 3, 4, and 5, those three edges meet at a single vertex and lie along three perpendicular axes. The volume is directly given by V = (1/6)*3*4*5 = 10 cm^3, without needing a separate height via the Pythagorean theorem. The use of 5 as a hypotenuse relative to 3 is unjustified in this 3D configuration, so the height calculation and all dependent steps are incorrect."
+        "first_error_reason": "The height of the tetrahedron is incorrectly computed. For a tetrahedron with three mutually perpendicular edges of lengths 3, 4, and 5 meeting at one vertex, the volume is given directly by V = (1/6)*3*4*5 = 10 cm^3. Step [5] wrongly treats 5 cm as a slanted edge whose projection gives a height via the Pythagorean theorem; this does not correspond to the actual geometry of the tetrahedron. Consequently, the derived height h = 4 cm and the resulting volume 8 cm^3 are incorrect."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 433,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Find the volume of the described solid S. A tetrahedron with three mutually perpendicular faces and three mutually perpendicular edges with lengths $3 \\mathrm{~cm}$, $4 \\mathrm{~cm}$, and $5 \\mathrm{~cm}$\nA. 8 $\\mathrm{cm}^3$\nB. 24 $\\mathrm{cm}^3$\nC. 14 $\\mathrm{cm}^3$\nD.  10 $\\mathrm{cm}^3$\nE. 6 $\\mathrm{cm}^3$\nF. 18 $\\mathrm{cm}^3$\nG. 20 $\\mathrm{cm}^3$\nH. 30 $\\mathrm{cm}^3$\nI. 15 $\\mathrm{cm}^3$\nJ. 12 $\\mathrm{cm}^3$"
         },
         {

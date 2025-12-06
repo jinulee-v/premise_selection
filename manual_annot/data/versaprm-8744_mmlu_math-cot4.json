@@ -10,7 +10,7 @@
         "source": "theoremQA-Math",
         "subject": "math",
         "first_error_index": 1,
-        "first_error_reason": "Step [1] incorrectly states a closed-form formula for a real root as part of the Birge\u2013Vieta method. Birge\u2013Vieta is an iterative synthetic-division-based scheme for approximating roots, not a direct cubic formula. All subsequent algebra based on this formula (steps [2] onward) is therefore not a valid application of the Birge\u2013Vieta method."
+        "first_error_reason": "Step [1] incorrectly states a closed-form formula for a real root as part of the Birge-Vieta method. Birge-Vieta is an iterative synthetic-division-based scheme for refining an initial guess; it does not use the cubic formula given in [2]. Consequently, all subsequent algebra based on [2] (and later [17]) is not a correct application of Birge-Vieta, and the use of p = 0.5 is also unjustified."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 223,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Use the Birge-Vieta method to find a real root correct to three decimals of the following equation: x^3 - 11x^2 + 32x - 22 = 0, p = 0.5\nA. 0.618\nB. 0.732\nC. 1\nD. 1.5\nE. 2.236\nF. 1.414\nG. 0.5\nH. 2\nI. 2.618\nJ. 1.732"
         },
         {

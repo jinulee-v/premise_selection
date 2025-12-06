@@ -10,7 +10,7 @@
         "source": "stemez-PhysicalChemistry",
         "subject": "chemistry",
         "first_error_index": 2,
-        "first_error_reason": "The heat of vaporization is given in cal per gram, so total heat q should be calculated as q = (94.4 cal/g) * (mass in g). Step [2] incorrectly states it should be multiplied by the number of moles, but then in step [3] uses grams anyway. This conceptual inconsistency is the first clear error in the reasoning."
+        "first_error_reason": "They state that total heat q is found by multiplying 94.4 cal/g by the *number of moles* of benzene, but then actually multiply by the mass in grams. The verbal description is conceptually wrong: q = (heat of vaporization per gram) \u00d7 (mass in grams), not per mole. This indicates a misunderstanding of the given quantity and is the first clear error in the reasoning."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 951,
-            "label": "correct",
+            "label": "question",
             "text": "Question: At 760torr, 100 grains of benzene is vaporized at its boiling At 760torr, 100 grains of benzene is vaporized at its boiling point of 80.2\u00b0C. Calculate a)W_rev, b) q, c) \\DeltaH, d) \\DeltaE. The c) \\DeltaH, d) \\DeltaE. The heat of vaporization is 94.4 (cal / g).\nA. W_rev= - 898 cal, q = 9440 cal, \\DeltaH = 9440 cal, \\DeltaE = 8542 cal\nB. W_rev= - 700 cal, q = 9400 cal, \\DeltaH = 9400 cal, \\DeltaE = 8500 cal\nC. W_rev= - 880 cal, q = 9300 cal, \u0394H = 9300 cal, \u0394E = 8500 cal\nD. W_rev= - 850 cal, q = 9440 cal, \u0394H = 9440 cal, \u0394E = 8600 cal\nE. W_rev= - 900 cal, q = 9500 cal, \\DeltaH = 9500 cal, \\DeltaE = 8600 cal\nF. W_rev= - 850 cal, q = 9400 cal, \u0394H = 9500 cal, \u0394E = 8700 cal\nG. W_rev= - 898 cal, q = 9500 cal, \u0394H = 9300 cal, \u0394E = 8400 cal\nH. W_rev= - 800 cal, q = 9300 cal, \\DeltaH = 9300 cal, \\DeltaE = 8400 cal\nI. W_rev= - 900 cal, q = 9400 cal, \u0394H = 9400 cal, \u0394E = 8600 cal\nJ. W_rev= - 920 cal, q = 9440 cal, \u0394H = 9500 cal, \u0394E = 8600 cal"
         },
         {

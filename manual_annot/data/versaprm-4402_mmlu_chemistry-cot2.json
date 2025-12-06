@@ -10,7 +10,7 @@
         "source": "stemez-PhysicalChemistry",
         "subject": "chemistry",
         "first_error_index": 4,
-        "first_error_reason": "Step [4] incorrectly applies the Clausius\u2013Clapeyron equation to liquid A using the vapor pressures 20 mm Hg and 40 mm Hg at 40\u00b0C and 120\u00b0C, but those pressures (20 and 40 mm Hg) are given for liquids A and B at the same temperature (40\u00b0C), not for A at two different temperatures. Thus the substitution in [5] is invalid, and the derived value 11.09 kcal/mole in [6] is not obtained from the given data. Subsequent conclusions in [7] and the final answer based on this are therefore unsupported."
+        "first_error_reason": "Step [4] incorrectly sets up the Clausius\u2013Clapeyron calculation for liquid A. The given data (P_A = 20 mmHg at 40\u00b0C and normal boiling point 120\u00b0C) should be used with P1 = 20 mmHg at T1 = 313.15 K (40\u00b0C) and P2 = 760 mmHg at T2 = 393.15 K (120\u00b0C). Instead, step [5] uses 40/20 as the pressure ratio and 293.15 K (20\u00b0C) and 393.15 K (120\u00b0C) as temperatures, which do not correspond to the stated conditions for liquid A. This leads to an incorrect intermediate result in [6], and the subsequent comparison in [7] is unjustified. Therefore, the reasoning from step [4] onward is based on misapplied data."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 523,
-            "label": "correct",
+            "label": "question",
             "text": "Question: At 40\u00b0C the vapor pressures of two liquids A and B are 20 mm Hg and 40 mm Hg respectively. Liquid A has a normal boiling point of 120\u00b0C and that for liquid B is 140\u00b0C. Given that the heat of vaporization of A is 11.3 kcal/mole which of the following best describes the heat of vaporiza-tion of B(5.65 kcal/mole, 11.09 kcal/mole, 22.6 kcal/mole, less than 11.3 kcal/mole, greater than 11.09 kcal/mole, about the same, indeterminate because of insufficient data)?\nA. 22.6 kcal\nB. 5.65 kcal\nC. 7.58 kcal\nD. 11.3 kcal"
         },
         {

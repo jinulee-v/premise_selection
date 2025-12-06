@@ -10,7 +10,7 @@
         "source": "stemez-Chemistry",
         "subject": "chemistry",
         "first_error_index": 2,
-        "first_error_reason": "The solubility product expression K_sp = [Zn^{2+}][S^{2-}] should be used directly to solve for [S^{2-}] = K_sp / [Zn^{2+}]. Squaring both sides to get K_sp^2 = [Zn^{2+}]^2 [S^{2-}]^2 is algebraically incorrect for this purpose and leads to an incorrect expression for [S^{2-}] in step [3]. Subsequent numerical values and the conclusion based on them are therefore invalid."
+        "first_error_reason": "The solubility product expression K_sp = [Zn^{2+}][S^{2-}] should be used directly to solve for [S^{2-}] = K_sp / [Zn^{2+}]. Squaring both sides to get K_sp^2 = [Zn^{2+}]^2 [S^{2-}]^2 is algebraically incorrect for this purpose and leads to an incorrect expression in step [3]. Subsequent numerical values and the conclusion based on them are therefore invalid."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 702,
-            "label": "correct",
+            "label": "question",
             "text": "Question: A chemist has a solution which contains Zn^2+ and Cu^2+, each at .02M. If the solution is made 1M in H_3O+ and H_2S is bubbled in until the solution is saturated, will a precipitate form? K_sp of ZnS = 1 \u00d7 10-^22, K_sp of CuS = 8 \u00d7 10-^37, and K_eq for H_2S, when saturated, = 1 \u00d7 10-^22 .\nA. Precipitation of CuS followed by ZnS\nB. Precipitation of ZnS\nC. Precipitation of CuS\nD. Precipitation of an insoluble compound other than ZnS or CuS\nE. Precipitation of ZnS followed by CuS\nF. No precipitation initially, but occurs upon further addition of H_2S\nG. Precipitation only at low pH values\nH. No precipitation\nI. Precipitation of both ZnS and CuS\nJ. Precipitation only at high temperatures"
         },
         {

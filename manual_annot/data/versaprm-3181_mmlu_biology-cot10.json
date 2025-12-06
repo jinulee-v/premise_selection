@@ -10,7 +10,7 @@
         "source": "stemez-Genetics",
         "subject": "biology",
         "first_error_index": 6,
-        "first_error_reason": "The conclusion that (C) is correct is based on an inaccurate description in option C. While reverse transcriptase does catalyze the synthesis of DNA from RNA and is used to make cDNA, it is not a 'necessary reagent for genetic engineering with recombinant DNA' in general. Many recombinant DNA procedures do not involve reverse transcriptase at all. The reasoning up to step [5] is correct, but the mapping of that correct biology to option C is inaccurate."
+        "first_error_reason": "The conclusion that (C) is correct is based on a misreading of option C. While reverse transcriptase does catalyze the synthesis of DNA from RNA and is used to make cDNA, it is not a 'necessary reagent for genetic engineering with recombinant DNA' in general. Many recombinant DNA procedures do not involve reverse transcriptase at all. The correct exploitation described in the reasoning (making cDNA from RNA) is not accurately captured by any of the listed options, so selecting C is unjustified."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 959,
-            "label": "correct",
+            "label": "question",
             "text": "Question: How has the action of reverse transcriptase been exploited by biologists?\nA. Reverse transcriptase is employed to directly replicate DNA in PCR amplifications.\nB. Reverse transcriptase is applied in the creation of vaccines by altering DNA sequences.\nC. Reverse transcriptase catalyzes the synthesis of DNA from RNA and is a necessary reagent for genetic engineering with recombinant DNA.\nD. Reverse transcriptase is used to transcribe DNA from proteins\nE. Reverse transcriptase is used to convert lipids into DNA for genome mapping.\nF. Reverse transcriptase is utilized to enhance the mutation rate in organisms for evolutionary studies.\nG. Reverse transcriptase is used to transcribe proteins from DNA\nH. Reverse transcriptase is used for converting mRNA into proteins in vitro.\nI. Reverse transcriptase is used in the manufacturing of synthetic RNA for therapeutic purposes.\nJ. Reverse transcriptase is primarily used in the study of retroviruses"
         },
         {

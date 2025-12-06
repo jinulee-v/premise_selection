@@ -10,7 +10,7 @@
         "source": "stemez-Physics",
         "subject": "physics",
         "first_error_index": 5,
-        "first_error_reason": "From infinity to the Earth's surface, the gravitational potential energy change cannot be modeled as \u0394U = mgh with constant g and finite h. The correct expression uses Newtonian gravity: \u0394U = GMm/R, not mgh. This invalidates subsequent numerical steps based on mgh, and later steps (18\u201329) introduce unrelated and incorrect uses of E = mc^2 and arbitrary photon energies, so the final answer is not logically derived from the problem."
+        "first_error_reason": "From infinity to the Earth's surface, the gravitational potential energy change cannot be modeled as mgh with a constant g and a finite h; the correct expression uses Newtonian gravity: \u0394U = GMm/R. Using mgh with h = Earth's radius is conceptually incorrect for a fall from infinity. Subsequent steps relying on this (including the computed velocity, kinetic energy, and resulting photon frequency) are therefore invalid."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 508,
-            "label": "correct",
+            "label": "question",
             "text": "Question: A proton is at rest a long way away from the earth. It falls toward the earth under the influence of the earth's gravitational attraction. When it reaches the earth, all its kinetic energy is converted into the energy of a single quantum of light. What is the frequency of this quantum?\nA. 2.2 \u00d7 10^14 sec^-1\nB. 0.8 \u00d7 10^14 sec^-1\nC. 1.0 \u00d7 10^14 sec^-1\nD. 1.2 \u00d7 1014sec^-1\nE. 1.8 \u00d7 10^14 sec^-1\nF. 2.0 \u00d7 1014sec^-1\nG. 1.6 \u00d7 1014sec^-1\nH. 1.9 \u00d7 10^14 sec^-1\nI. 2.5 \u00d7 10^14 sec^-1\nJ. 1.4 \u00d7 1014sec^-1"
         },
         {

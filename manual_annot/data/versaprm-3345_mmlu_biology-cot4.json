@@ -9,8 +9,8 @@
         "generator": null,
         "source": "stemez-Biology",
         "subject": "biology",
-        "first_error_index": 4,
-        "first_error_reason": "Step [4] claims that 'cultural traditions' are elements of advanced animal societies and uses this to support option E. However, option E does not include cultural traditions; it includes leadership, territory, and dominance hierarchy. Cultural traditions actually appear in option D, not E, so this step misattributes the cited behavior to the chosen answer and conflates support for D with support for E."
+        "first_error_index": 6,
+        "first_error_reason": "Step [6] incorrectly claims that the other options describe only human societies and not animal societies. In fact, several of the listed elements (e.g., cultural traditions in D, family structure and migration patterns in F, habitat selection, mating rituals, and parental care in G) are well-documented in advanced animal societies. Therefore, dismissing all other options as purely human is an overgeneralization and factually wrong."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 822,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Discuss some of the elements found in advanced animal societies.\nA. Language development, agricultural practices, and written communication are elements found in advanced animal societies.\nB. Economic systems, legal structures, and political elections are elements found in advanced animal societies.\nC. Adaptation, evolution and species diversity are elements found in advanced animal societies.\nD. Cultural traditions, artistic expression, and philosophy are elements found in advanced animal societies.\nE. Leadership, territory and dominance hierarchy are elements found in advanced animal societies.\nF. Family structure, food chains and migration patterns are elements found in advanced animal societies.\nG. Habitat selection, mating rituals and parental care are elements found in advanced animal societies."
         },
         {
@@ -58,7 +58,7 @@
             "annotation": true,
             "start": 487,
             "end": 652,
-            "label": "first_error",
+            "label": "correct",
             "text": "- Cultural traditions: Some species, such as chimpanzees and elephants, have been observed exhibiting cultural traditions, such as tool use and hunting strategies."
         },
         {
@@ -66,7 +66,7 @@
             "annotation": true,
             "start": 652,
             "end": 815,
-            "label": "",
+            "label": "correct",
             "text": "- Family structure: Advanced animal societies often exhibit complex family structures, such as primate and bird societies that have complex social relationships."
         },
         {
@@ -74,7 +74,7 @@
             "annotation": true,
             "start": 815,
             "end": 927,
-            "label": "",
+            "label": "first_error",
             "text": "The other options are incorrect because they describe elements found in human societies, not animal societies."
         },
         {

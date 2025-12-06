@@ -10,7 +10,7 @@
         "source": "scibench-stat",
         "subject": "math",
         "first_error_index": 3,
-        "first_error_reason": "This step incorrectly states that a normal approximation to the binomial is being used. The problem involves the sampling distribution of the sample mean from an exponential distribution, so the appropriate justification is the Central Limit Theorem (CLT), not a binomial approximation. The rest of the computation (z-scores and use of the normal CDF) is correct."
+        "first_error_reason": "The phrase 'normal approximation to the binomial' is incorrect here. The reasoning should invoke the Central Limit Theorem (normal approximation to the sampling distribution of the mean of an exponential), not a binomial distribution. The rest of the computation correctly uses the normal distribution for the sample mean."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 264,
-            "label": "correct",
+            "label": "question",
             "text": "Question: 5.6-3. Let $\\bar{X}$ be the mean of a random sample of size 36 from an exponential distribution with mean 3 . Approximate $P(2.5 \\leq \\bar{X} \\leq 4)$\n\nA. 0.6732\nB. 0.8817\nC. 0.8452\nD. 0.7548\nE. 0.9026\nF. 0.5879\nG. 0.7653\nH. 0.6981\nI.  $0.8185$\nJ. 0.9254"
         },
         {

@@ -10,7 +10,7 @@
         "source": "ori_mmlu-college_physics",
         "subject": "physics",
         "first_error_index": 0,
-        "first_error_reason": "The echo frequency is not simply the same as the original siren frequency; Doppler shifts occur twice: once when the moving source emits sound toward the wall (stationary reflector) and again when the reflected wave (now from a stationary source) is received by the moving observer. Thus, the driver hears a shifted frequency, not 600 Hz."
+        "first_error_reason": "The echo frequency is not simply the same as the original siren frequency; Doppler shifts occur twice: once when the moving source emits sound toward the wall (stationary observer) and again when the moving observer (driver) receives the reflected wave. Thus, assuming no frequency change at the start is incorrect and invalidates the subsequent reasoning."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 388,
-            "label": "correct",
+            "label": "question",
             "text": "Question: The driver of a police car hears an echo of the car\u2019s siren from a wall toward which the car is moving with a speed of 3.5 m/s. If the speed of sound is 350 m/s and the frequency of the siren is 600 Hz, the driver hears the echo at a frequency nearest to which of the following?\nA. 594 Hz\nB. 588 Hz\nC. 606 Hz\nD. 642 Hz\nE. 636 Hz\nF. 612 Hz\nG. 600 Hz\nH. 618 Hz\nI. 630 Hz\nJ. 624 Hz"
         },
         {

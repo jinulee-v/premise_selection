@@ -9,8 +9,8 @@
         "generator": null,
         "source": "theoremQA-Math",
         "subject": "math",
-        "first_error_index": 0,
-        "first_error_reason": "The expression for the tangent line L(x) at x = a is incorrect. It should be L(x) = f(a) + f'(a)(x - a), not L(x) = f'(a)x + f(a). As written, they substitute f'(x) = (x^2 - 2x)e^{-x} directly with x in place of a, giving L(x) = (e^{-a}x^2 - 2xe^{-a}) + a^2 e^{-a}, which is not linear in x and therefore cannot be a tangent line. This foundational error invalidates the subsequent reasoning that uses this form of L(x)."
+        "first_error_index": 1,
+        "first_error_reason": "They incorrectly assert that L(0)=0 implies f(a)=0. From L(x) = f'(a)(x - a) + f(a), we get L(0) = f(a) - a f'(a). The correct condition for the tangent line at x=a to pass through the origin is f(a) - a f'(a) = 0, not f(a)=0. This wrong condition is then used repeatedly, so the subsequent steps based on f(a)=0 are invalid."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 356,
-            "label": "correct",
+            "label": "question",
             "text": "Question: What's the value of a > 0, such that the tangent line to the graph of f(x) = (x^2) (e^(-x)) at x = a passes through the origin?\nA. 1/2\nB. sqrt(2) (the square root of 2, approximately 1.41421)\nC. 3\nD. e (Euler's number, approximately 2.71828)\nE. 1\nF. 5\nG. 2\nH. 4\nI. -1 (note that this is not a valid option since the question specifies a > 0)\nJ. 0"
         },
         {
@@ -26,7 +26,7 @@
             "annotation": true,
             "start": 0,
             "end": 301,
-            "label": "first_error",
+            "label": "correct",
             "text": "Let $L$ be the tangent line to the graph of $f$ at $x=a$. Then $L$ passes through the origin if and only if $L$ passes through $(0,0)$. That is, if and only if $L(0)=0$. We have\n$$\n\\begin{aligned}\nL(x) & = f^{\\prime}(a) x+f(a) \\\\\n& =\\left(e^{-a} x^{2}-2 x e^{-a}\\right)+a^{2} e^{-a}\n\\end{aligned}\n$$"
         },
         {
@@ -34,7 +34,7 @@
             "annotation": true,
             "start": 301,
             "end": 549,
-            "label": "",
+            "label": "first_error",
             "text": "Since $L(0)=0$ we have that $f(a)=0$ or $a^{2} e^{-a}=0$. Since $a>0$, $a^{2} e^{-a}=0$ is not possible. Hence $f(a)=0$ and so\n$$\n\\begin{aligned}\na^{2} e^{-a} & =0 \\\\\n\\Rightarrow \\quad a^{2} & =0 \\quad \\text { or } \\quad e^{-a}=0\n\\end{aligned}\n$$"
         },
         {

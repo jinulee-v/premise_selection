@@ -10,7 +10,7 @@
         "source": "theoremQA-Math",
         "subject": "math",
         "first_error_index": 0,
-        "first_error_reason": "Step [0] asserts the algebraic identity 1 + (tan x)^{\u221a2} = (1 + tan x)^{1/\u221a2}(1 - tan x)^{1/\u221a2}, which is false in general. There is no valid exponent manipulation that turns 1 + a^{\u221a2} into (1 + a)^{1/\u221a2}(1 - a)^{1/\u221a2}. This invalid identity corrupts all subsequent manipulations in step [1]."
+        "first_error_reason": "Step [0] asserts the algebraic identity 1 + (tan x)^{\u221a2} = (1 + tan x)^{1/\u221a2}(1 - tan x)^{1/\u221a2}, which is false in general. This invalid factorization corrupts all subsequent manipulations in step [1]. The later substitution method in steps [2]-[3] is correct and yields the right answer, but the first error occurs at step [0]."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 230,
-            "label": "correct",
+            "label": "question",
             "text": "Question: What is the value of the integral $\\int_0^{\\pi/2} 1/(1+(tan(x))^{\\sqrt{2}}) dx$?\nA. 0.56418958\nB. 2.71828183\nC. 0.63661977\nD. 3.14159265\nE. 1.04719755\nF. 0.78539815\nG. 0.70710678\nH. 2.35619449\nI. 1.57079633\nJ. 1.41421356"
         },
         {

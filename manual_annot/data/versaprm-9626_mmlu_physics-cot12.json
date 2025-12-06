@@ -10,7 +10,7 @@
         "source": "stemez-Physics",
         "subject": "physics",
         "first_error_index": 7,
-        "first_error_reason": "The algebraic simplification from step [6] to step [7] is incorrect. From sqrt(8/3 * \u03c0 * G * \u03c1 * r^2) > sqrt(2 * k * T / m), squaring both sides gives (8/3) * \u03c0 * G * \u03c1 * r^2 > 2 * k * T / m. This should lead to r^2 > (3 * k * T) / (4 * \u03c0 * G * \u03c1 * m), not 8 * \u03c0 * G * \u03c1 * r^2 > 6 * k * T / m as written. The numerical factor on both sides is wrong, so the derived expression for r in step [8] is based on an incorrect inequality."
+        "first_error_reason": "The algebraic simplification from step [6] to step [7] is incorrect. Starting from sqrt(8/3 * pi * G * rho * r^2) > sqrt(2 * k * T / m), squaring both sides should give (8/3) * pi * G * rho * r^2 > 2 * k * T / m. However, step [7] incorrectly writes this as 8 * pi * G * rho * r^2 > 6 * k * T / m, introducing an erroneous factor of 3 on both sides. This leads to an incorrect expression for r in step [8]."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 252,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Find the minimum radius for a planet of mean density 5500 kg \\bullet m^-3 and temperature 400\u00b0C which has retained oxygen in its atmosphere.\nA. 450 km\nB. 750 km\nC. 500 km\nD. 600 km\nE. 530 km\nF. 413.1 km\nG. 275 km\nH. 350 km\nI. 325 km\nJ. 488 km"
         },
         {

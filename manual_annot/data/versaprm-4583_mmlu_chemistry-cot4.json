@@ -10,7 +10,7 @@
         "source": "stemez-Chemistry",
         "subject": "chemistry",
         "first_error_index": 11,
-        "first_error_reason": "The conclusion about the sign of \u0394G\u00b0 for reaction (b) is incorrect. The computed value in step [10] is -687.48 kcal/mol, which is negative, not positive. Therefore, both reactions have negative \u0394G\u00b0, and reaction (b) is actually more exergonic (more efficient), not reaction (a)."
+        "first_error_reason": "The computed value in step [10] shows that \u0394G\u00b0 for reaction (b) is -687.48 kcal/mol, which is negative, not positive. Step [11] incorrectly states that \u0394G\u00b0 is positive for reaction (b), leading to the wrong conclusion about which reaction is more efficient. Reaction (b), with the more negative \u0394G\u00b0, represents the more efficient utilization of glucose."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 567,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Two possible metabolic fates of \\alpha-D-glucose are given below. Compare the standard free energy changes at 25\u00b0C for these processes. Which process represents the more efficient utilization of \\alpha-D-glucose? (a) \\alpha-D-glucose (1 M) \\rightarrow 2 ethanol (1 M) + 2CO_2 (g) (b) 6O2(g) + \\alpha-D-glucose (1 M) 6CO_2(g) + 6 H_2O (l) \u2206G\u00b0_fin Kcal/mole are CO_2(g) = - 94.26, H_2O (l) = - 56.69, ethanol (1 M) = - 43.39, \\alpha-D-glucose = - 219.22.\nA. Neither reaction is efficient\nB. Reaction (a)\nC. Both reactions are equally efficient\nD. Reaction (b)"
         },
         {

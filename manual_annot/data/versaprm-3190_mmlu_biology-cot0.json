@@ -10,7 +10,7 @@
         "source": "stemez-Biology",
         "subject": "biology",
         "first_error_index": 2,
-        "first_error_reason": "Step [2] incorrectly restricts Hominoidea to only the great apes and humans. The superfamily Hominoidea includes all apes: both the lesser apes (gibbons, family Hylobatidae) and the great apes plus humans (family Hominidae). Therefore, Hominoidea is not limited to great apes and humans as stated."
+        "first_error_reason": "Step [2] incorrectly defines Hominoidea as including only the great apes and humans. In modern taxonomy, Hominoidea includes both families Hylobatidae (lesser apes: gibbons and siamangs) and Hominidae (great apes and humans). Therefore, Hominoidea is not limited to great apes and humans. This misdefinition also propagates to step [4], but the first error occurs at [2]."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 1589,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Define the termsAnthropoidea,Hominidaeand Hominoidea?\nA. Anthropoidea are the primitive primates. Hominoidea are the tailed anthropoids. Hominidae includes gorilla, chimpanzee, orangutan.\nB. Anthropoidea are the higher primates excluding humans. Hominoidea consists of the lesser apes and the gibbons. Hominidae includes all the great apes, including humans and their immediate ancestors.\nC. Anthropoidea include all extinct primate species. Hominoidea are the arboreal primates. Hominidae consists of the new world monkeys and humans.\nD. Anthropoidea are the suborder of primates excluding prosimians. Hominoidea includes all non-ape primates. Hominidae is restricted to the African great apes.\nE. Anthropoidea encompass all primates. Hominoidea refers to the lesser apes and tarsiers. Hominidae includes only the modern human species.\nF. Anthropoidea are the lower primates. Hominoidea are the small apes. Hominidae includes fossil apes and modern apes.\nG. Anthropoidea are the New World monkeys. Hominoidea are the Old World monkeys. Hominidae includes gibbons.\nH. Anthropoidea are the branch of primates including lemurs and lorises. Hominoidea are the large-bodied apes. Hominidae consists of all modern and extinct monkeys.\nI. Anthropoidea are the higher primates. The superfamily Hominoidea is represented by great apes and man. The family Hominidae includes fossil men and modern man.\nJ. Anthropoidea are the subgroup of primates that are neither monkeys nor apes. Hominoidea includes all bipedal primates. Hominidae is a group composed of modern humans and Neanderthals."
         },
         {

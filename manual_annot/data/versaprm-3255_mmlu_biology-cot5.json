@@ -10,7 +10,7 @@
         "source": "stemez-Biology",
         "subject": "biology",
         "first_error_index": 3,
-        "first_error_reason": "The claim that humans and chimpanzees can interbreed in a laboratory setting is factually incorrect; there is no credible evidence that human\u2013chimpanzee hybrids have ever been produced, in a lab or otherwise. This example cannot be used to support the argument. The rest of the reasoning (that lab interbreeding alone is insufficient to define species) is sound, and option D is a reasonable answer."
+        "first_error_reason": "The claim that humans and chimpanzees can interbreed in a laboratory setting is factually incorrect; there is no credible evidence that human\u2013chimpanzee hybrids have ever been produced, in a lab or otherwise. This example cannot be used to support the argument."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 1097,
-            "label": "correct",
+            "label": "question",
             "text": "Question: If mating is observed to occur freely between organisms of twodifferent populations in the laboratory, and the cross producesviable offspring, can you assume that the two populationsbelong to the same species?\nA. Only if the offspring can also interbreed successfully.\nB. No, successful interbreeding in the laboratory must also be complemented by ecological, behavioral, and morphological studies to confirm they are the same species.\nC. It depends on whether the organisms can interbreed in a controlled environment other than a laboratory.\nD. No, successful interbreeding in the laboratory does not offer enough evidence that two populations must be of the same species.\nE. It depends on the type of organisms being tested.\nF. No, unless the interbreeding also occurs frequently in their natural habitat.\nG. Yes, successful interbreeding in the laboratory is sufficient proof of the same species.\nH. Only if the organisms share identical genetic markers.\nI. Yes, if the offspring show traits that are a mix of both parent populations.\nJ. Yes, as long as the offspring are not sterile."
         },
         {

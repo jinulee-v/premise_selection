@@ -10,7 +10,7 @@
         "source": "ori_mmlu-college_chemistry",
         "subject": "chemistry",
         "first_error_index": 5,
-        "first_error_reason": "The computed Q-factor is approximately 6.02 \u00d7 10^3, which should round to 6000, not 6012. The step incorrectly describes rounding and then matches to option I (6012) without justification; the correct closest option is J (8012) or none exactly, but 6012 is not a proper rounding of 6020 or 6024, etc."
+        "first_error_reason": "The computed Q-factor is approximately 6.02 \u00d7 10^3, which should round to 6000, not 6012. The step incorrectly describes rounding and introduces an unjustified extra 12. The correct choice based on the calculation is I (6012) only because it is the closest option to 6020, but the explanation of rounding is wrong."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 218,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Calculate the Q-factor for an X-band EPR cavity with a resonator bandwidth of 1.58 MHz.\nA. Q = 9012\nB. Q = 3012\nC. Q = 2012\nD. Q = 7012\nE. Q = 1012\nF. Q = 5012\nG. Q = 4012\nH. Q = 10012\nI. Q = 6012\nJ. Q = 8012"
         },
         {

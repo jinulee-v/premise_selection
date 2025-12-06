@@ -10,7 +10,7 @@
         "source": "theoremQA-Math",
         "subject": "math",
         "first_error_index": 0,
-        "first_error_reason": "Step [0] incorrectly uses C(6,2)=15, which counts only pairs of *distinct* flavors and assumes order does not matter. The problem does not forbid two scoops of the same flavor, so combinations like (chocolate, chocolate) must be included. The correct count of unordered pairs with repetition from 6 flavors is C(6+2-1,2)=C(7,2)=21, not 15."
+        "first_error_reason": "The combination of ice cream balls is miscounted. Using C(6,2)=15 assumes the two scoops must be of different flavors, but the problem does not forbid two scoops of the same flavor. The correct count of unordered pairs with repetition allowed is C(6+2-1,2)=C(7,2)=21, not 15."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 235,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Given that each cone can contain two ice cream balls, how many different ice cream cones can you make if you have 6 flavors of ice cream and 5 types of cones?\nA. 120\nB. 150\nC. 60\nD. 210\nE. 360\nF. 300\nG. 72\nH. 240\nI. 180\nJ. 90"
         },
         {

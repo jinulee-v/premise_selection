@@ -10,7 +10,7 @@
         "source": "scibench-matter",
         "subject": "chemistry",
         "first_error_index": 1,
-        "first_error_reason": "The expression for the rotational partition function is incorrect. For a linear molecule, the classical high-temperature rotational partition function is q_rot = (8\u03c0\u00b2IkT)/(\u03c3h\u00b2), not the asymmetric-top formula involving (I1 I2 I3)^{1/2} and an extra (8\u03c0\u00b3/(h\u00b3\u03b2\u00b3))^{1/2} factor. Subsequent rotational calculations based on this are therefore invalid."
+        "first_error_reason": "The rotational partition function formula used is incorrect and corresponds to a nonlinear polyatomic molecule with three principal moments of inertia. For a linear diatomic molecule like F2\u2212, the correct high-temperature rotational partition function is q_rot = (8\u03c0\u00b2IkT)/(\u03c3h\u00b2), not the expression involving (I1 I2 I3)^{1/2} and \u03b2\u00b3. This invalidates subsequent rotational-entropy-related steps."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 1134,
-            "label": "correct",
+            "label": "question",
             "text": "Question: J.G. Dojahn, et al. (J. Phys. Chem. 100, 9649 (1996)) characterized the potential energy curves of the ground and electronic states of homonuclear diatomic halogen anions. The ground state of $\\mathrm{F}_2^{-}$is ${ }^2 \\sum_{\\mathrm{u}}^{+}$with a fundamental vibrational wavenumber of $450.0 \\mathrm{~cm}^{-1}$ and equilibrium internuclear distance of $190.0 \\mathrm{pm}$. The first two excited states are at 1.609 and $1.702 \\mathrm{eV}$ above the ground state. Compute the standard molar entropy of $\\mathrm{F}_2^{-}$at $298 \\mathrm{~K}$.\nA. 235.1 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nB.  199.4 $\\mathrm{~J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nC. 183.2 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nD. 220.8 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nE. 250.3 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nF. 162.9 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nG. 208.5 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nH. 215.6 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nI. 174.7 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$\nJ. 188.6 $\\mathrm{J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$"
         },
         {

@@ -10,7 +10,7 @@
         "source": "ori_mmlu-abstract_algebra",
         "subject": "math",
         "first_error_index": 4,
-        "first_error_reason": "The expansion of (4x - 5)(2x^2 - 4x + 2) is incorrect. The correct product is 8x^3 - 16x^2 + 8x - 10x^2 + 20x - 10, which simplifies to 8x^3 - 26x^2 + 28x - 10, not 8x^3 - 16x^2 + 8x - 10x^2 + 20x - 10 + 4x^2 - 20x + 10. Extra terms (4x^2 - 20x + 10) were incorrectly added."
+        "first_error_reason": "The expansion of (4x - 5)(2x^2 - 4x + 2) is incorrect. The correct term-by-term products are (4x)(2x^2) = 8x^3, (4x)(-4x) = -16x^2, (4x)(2) = 8x, (-5)(2x^2) = -10x^2, (-5)(-4x) = 20x, and (-5)(2) = -10, giving 8x^3 - 26x^2 + 28x - 10, not 8x^3 - 16x^2 + 8x - 10x^2 + 20x - 10 + 4x^2 - 20x + 10. The extra terms 4x^2 - 20x + 10 come from an incorrect distribution."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 281,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Find the product of the given polynomials in the given polynomial ring. f(x) = 4x - 5, g(x) = 2x^2 - 4x + 2 in Z_8[x].\nA. x^2 - 1\nB. 2x^3 - 4x^2 + 2x\nC. 8x^3 - 20x^2 + 10x\nD. 6x^3 + 8x^2 + 6x\nE. x^2 + 1\nF. 6x^2 + 4x + 6\nG. 10x^2 - 4x + 2\nH. 0\nI. 2x^2 + 5\nJ. 4x^2 + 8x - 4"
         },
         {

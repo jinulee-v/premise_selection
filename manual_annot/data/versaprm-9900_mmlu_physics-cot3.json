@@ -10,7 +10,7 @@
         "source": "stemez-Physics",
         "subject": "physics",
         "first_error_index": 1,
-        "first_error_reason": "Step [1] misapplies the power formula. The heat energy Q should be computed as Q = m * c * \u0394T = 50 kg * 4186 J/(kg\u00b7\u00b0C) * 10 \u00b0C = 2,093,000 J. Instead, the step incorrectly multiplies power (74600 W) by mass and temperature change, giving 37,300,000 J, which is dimensionally and numerically wrong."
+        "first_error_reason": "Step [1] misapplies the formula for heat energy. The correct expression is Q = m * c * \u0394T, which for 50 kg of water, c = 4186 J/(kg\u00b7\u00b0C), and \u0394T = 10 \u00b0C gives Q = 50 * 4186 * 10 = 2,093,000 J. Instead, the step incorrectly multiplies power (74600 W) by mass and temperature change, yielding 37,300,000 J, which is dimensionally and numerically wrong. This error propagates to the time calculation and the final answer."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 298,
-            "label": "correct",
+            "label": "question",
             "text": "Question: The entire power from a 100-hp automobile engine is used to agitate 50 kg of water thermally insulated from its surroundings. How long will it take for the temperature of the water to rise 10 Celsius degrees?\nA. 15 s\nB. 60 s\nC. 28 s\nD. 10 s\nE. 35 s\nF. 40 s\nG. 20 s\nH. 25 s\nI. 45 s\nJ. 50 s"
         },
         {

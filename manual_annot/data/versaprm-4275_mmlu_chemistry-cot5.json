@@ -10,7 +10,7 @@
         "source": "scibench-atkins",
         "subject": "chemistry",
         "first_error_index": 4,
-        "first_error_reason": "The pressure computed in step [4] is incorrect. Using n = 3311 mol, R = 0.08206 L\u00b7atm\u00b7mol\u207b\u00b9\u00b7K\u207b\u00b9, T = 300 K, and V = 1000 L, the ideal-gas pressure is P = (3311 \u00d7 0.08206 \u00d7 300) / 1000 \u2248 81.5 atm, not 77.3 atm. This numerical error propagates into later calculations."
+        "first_error_reason": "The problem states the gas enters at 300 K and 100 atm, so the initial state is fixed by these values. Step [4] incorrectly recomputes the initial pressure using the ideal gas law and obtains 77.3 atm, which contradicts the given 100 atm. This leads to an incorrect mole number if one were to be consistent with the stated initial conditions, and thus the subsequent van der Waals pressure calculation is not based on the correct state."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 676,
-            "label": "correct",
+            "label": "question",
             "text": "Question: In an industrial process, nitrogen is heated to $500 \\mathrm{~K}$ at a constant volume of $1.000 \\mathrm{~m}^3$. The gas enters the container at $300 \\mathrm{~K}$ and $100 \\mathrm{~atm}$. The mass of the gas is $92.4 \\mathrm{~kg}$. Use the van der Waals equation to determine the approximate pressure of the gas at its working temperature of $500 \\mathrm{~K}$. For nitrogen, $a=1.352 \\mathrm{dm}^6 \\mathrm{~atm} \\mathrm{~mol}^{-2}, b=0.0387 \\mathrm{dm}^3 \\mathrm{~mol}^{-1}$.\nA.  140$\\text{atm}$\nB. 130$\\text{atm}$\nC. 120$\\text{atm}$\nD. 150$\\text{atm}$\nE. 180$\\text{atm}$\nF. 110$\\text{atm}$\nG. 170$\\text{atm}$\nH. 220$\\text{atm}$\nI. 160$\\text{atm}$\nJ. 200$\\text{atm}$"
         },
         {

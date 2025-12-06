@@ -10,7 +10,7 @@
         "source": "ori_mmlu-astronomy",
         "subject": "physics",
         "first_error_index": 1,
-        "first_error_reason": "The corona does emit visible light; it is faint because it is very diffuse, not because it emits very little visible light. The key issue is its low density and the overwhelming brightness of the photosphere, not a lack of visible emission. Consequently, step [4] is also wrong in choosing (H); the best choice is (F) combined with the fact that the photosphere outshines it."
+        "first_error_reason": "The corona does emit visible light; it is faint because it is very diffuse, not because it emits very little visible light. Its brightness per unit volume is low, but integrated along the line of sight it is visible when the photosphere\u2019s glare is blocked. Therefore, saying it emits very little visible light is misleading. The correct main reason we don\u2019t usually see it is that the bright photosphere overwhelms it (answer C), not that it is too hot to emit visible light (H)."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 531,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Why can't we see the Sun's corona except during total solar eclipses?\nA. We can't see magnetic fields\nB. The corona is blocked by the Earth's atmosphere\nC. The corona is hidden by the Sun's photosphere\nD. The corona is made up mostly of charged particles which aren't luminous.\nE. The Sun's corona is actually invisible to the human eye\nF. It's too diffuse\nG. The corona is only visible at night\nH. It's too hot to emit visible light\nI. It's too far away from the Sun's surface\nJ. It's much too cool to emit visible light"
         },
         {

@@ -10,7 +10,7 @@
         "source": "stemez-Physics",
         "subject": "physics",
         "first_error_index": 0,
-        "first_error_reason": "The formula for the magnifying power of a compound microscope is not the ratio of the focal lengths. It depends on the tube length and the focal lengths, typically M \u2248 (L / f_objective) * (D / f_eyepiece), where L is the tube length and D is the near point (often 25 cm). Step [0] uses an incorrect formula, so all subsequent calculations based on it are invalid."
+        "first_error_reason": "The formula for the magnifying power of a compound microscope is not the ratio of the focal lengths (f_objective / f_eyepiece). It depends on the tube length and the focal lengths, typically M \u2248 (L / f_objective) \u00d7 (D / f_eyepiece), where L is the tube length and D is the near point. Thus step [0] (and consequently [1]\u2013[3]) uses an incorrect formula."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 283,
-            "label": "correct",
+            "label": "question",
             "text": "Question: The length of a microscope tube is 10 centimeters. The focal length of the objective is 0.5 centimeters and the focal length of the eyepiece is 2 centimeters. What is the magnifying power of the microscope?\nA. 100\nB. 400\nC. 150\nD. 500\nE. 50\nF. 250\nG. 20\nH. 200\nI. 300\nJ. 75"
         },
         {

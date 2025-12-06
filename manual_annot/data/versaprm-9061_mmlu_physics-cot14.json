@@ -10,7 +10,7 @@
         "source": "scibench-thermo",
         "subject": "physics",
         "first_error_index": 4,
-        "first_error_reason": "The chemical potential of the electron is incorrectly related to the Gibbs energy, and the numerical values are inconsistent. For this half-cell, \u0394G\u00b0 for the reaction is given by \u0394G\u00b0 = -nFE\u00b0 = -(1)(96485 C mol^{-1})(0.222 V) \u2248 -21.4 kJ mol^{-1}. This \u0394G\u00b0 applies to the overall half-reaction, not to the electron alone, and there is no justification for using -1/2 of some unrelated -237 kJ mol^{-1} value. Thus \u03bc\u00b0(e^-) is not 118.5 kJ mol^{-1}, and the subsequent calculation of \u03bc\u00b0(Cl^-) is invalid."
+        "first_error_reason": "Two errors occur here: (a) the chemical potential (standard Gibbs energy) of the electron in solution is not obtained from half of some unrelated \u0394G\u00b0 value (the -237 kJ\u00b7mol\u207b\u00b9 is arbitrary and incorrect in this context), and (b) \u0394G\u00b0 for the given half-cell is miscomputed. For the reaction AgCl(s) + e\u207b \u2192 Ag(s) + Cl\u207b(aq) with E\u00b0 = +0.222 V and n = 1, \u0394G\u00b0 = -nFE\u00b0 \u2248 -21.4 kJ\u00b7mol\u207b\u00b9, not +21.4 kJ\u00b7mol\u207b\u00b9, and this \u0394G\u00b0 relates the standard Gibbs energies of AgCl(s), Ag(s), and Cl\u207b(aq) directly without introducing \u03bc\u00b0(e\u207b). Thus the expression for \u03bc\u00b0(e\u207b) and the numerical value 118.5 kJ\u00b7mol\u207b\u00b9 are unjustified and incorrect."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 657,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Consider the half-cell reaction $\\operatorname{AgCl}(s)+\\mathrm{e}^{-} \\rightarrow$ $\\operatorname{Ag}(s)+\\mathrm{Cl}^{-}(a q)$. If $\\mu^{\\circ}(\\mathrm{AgCl}, s)=-109.71 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$, and if $E^{\\circ}=+0.222 \\mathrm{~V}$ for this half-cell, calculate the standard Gibbs energy of formation of $\\mathrm{Cl}^{-}(a q)$.\nA. -137.5 $\\mathrm{~kJ} \\mathrm{~mol}^{-1}$\nB. -140.9 kJ mol^{-1}\nC.  -131.1 $\\mathrm{~kJ} \\mathrm{~mol}^{-1}$\nD. -145.2 $\\mathrm{~kJ} \\mathrm{~mol}^{-1}$\nE. -122.7 $\\mathrm{~kJ} \\mathrm{~mol}^{-1}$\nF. -128.4 kJ mol^{-1}\nG. -155.7 kJ mol^{-1}\nH. -150.3 kJ mol^{-1}\nI. -100.0 kJ mol^{-1}\nJ. -115.6 kJ mol^{-1}"
         },
         {

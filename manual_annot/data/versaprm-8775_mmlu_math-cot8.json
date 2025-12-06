@@ -10,7 +10,7 @@
         "source": "ori_mmlu-abstract_algebra",
         "subject": "math",
         "first_error_index": 0,
-        "first_error_reason": "The coset (a, b) + <(1, 1)> is the set {(a + n, b + n) : n in Z}, not just the single element (a+1, b+1). Step [0] incorrectly treats coset addition as adding (1,1) once instead of considering all integer multiples of (1,1). This misunderstanding invalidates the subsequent reasoning about orders and the structure of the factor group."
+        "first_error_reason": "The coset (a, b) + <(1, 1)> is the set {(a + n, b + n) : n in Z}, not just the single element (a+1, b+1). Step [0] incorrectly treats coset addition as adding (1,1) once instead of considering all integer multiples of (1,1). This misunderstanding invalidates the subsequent reasoning about orders and the structure of the quotient group."
     },
     "nodes": [
         {
@@ -18,7 +18,7 @@
             "annotation": false,
             "start": 0,
             "end": 122,
-            "label": "correct",
+            "label": "question",
             "text": "Question: Find the order of the factor group (Z_11 x Z_15)/(<1, 1>)\nA. 1\nB. 10\nC. 7\nD. 3\nE. 11\nF. 25\nG. 20\nH. 5\nI. 15\nJ. 2"
         },
         {
