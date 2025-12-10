@@ -17,10 +17,10 @@ def make_step_rewards(logits, token_masks):
 SYSTEM_PROMPT = "Please reason step by step, and put your final answer within \\boxed{}."
 
 class QwenMathPRM:
-    def __init__(self, device="cuda", batch_size=32):
+    def __init__(self, device="cuda", batch_size=32, model="Qwen/Qwen2.5-Math-PRM-7B", **kwargs):
         self.device = device
-        self.tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Math-PRM-7B", trust_remote_code=True)
-        self.model = AutoModel.from_pretrained("Qwen/Qwen2.5-Math-PRM-7B", device_map=device, trust_remote_code=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True)
+        self.model = AutoModel.from_pretrained(model, device_map=device, trust_remote_code=True)
         self.batch_size = batch_size
         self.step_sep_id = self.tokenizer.encode("<extra_0>")[0]
 
@@ -57,12 +57,18 @@ class QwenMathPRM:
             token_masks = (input_id == self.step_sep_id)
             with torch.no_grad():
                 outputs = self.model(input_ids=input_id)
-                print(outputs[0].shape)
                 step_reward = make_step_rewards(outputs[0], token_masks)
                 step_predictions.extend([rewards[-1] for rewards in step_reward])
         
         assert len(step_predictions) == len(step_combinations)
         return step_predictions
+
+class QwenMath7BPRM(QwenMathPRM):
+    def __init__(self, device="cuda", batch_size=32, model="Qwen/Qwen2.5-Math-PRM-7B", **kwargs):
+        super().__init__(device=device, batch_size=batch_size, model=model, **kwargs)
+class QwenMath72BPRM(QwenMathPRM):
+    def __init__(self, device="cuda", batch_size=8, model="Qwen/Qwen2.5-Math-PRM-72B", **kwargs):
+        super().__init__(device=device, batch_size=batch_size, model=model, **kwargs)
 
 if __name__ == "__main__":
     prm = QwenMathPRM(device="cuda")

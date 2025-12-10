@@ -2,7 +2,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class VersaPRM:
-    def __init__(self, device="cuda", batch_size=16):
+    def __init__(self, device="cuda", batch_size=16, **kwargs):
         self.device = device
         self.tokenizer = self._get_tokenizer('UW-Madison-Lee-Lab/VersaPRM')
         self.model = AutoModelForCausalLM.from_pretrained('UW-Madison-Lee-Lab/VersaPRM')
