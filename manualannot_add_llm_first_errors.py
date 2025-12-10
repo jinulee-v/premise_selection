@@ -62,15 +62,18 @@ for example in data:
         first_error, reason = identify_errors_in_trace(question, steps)
         example["metadata"]["first_error_index"] = first_error
         example["metadata"]["first_error_reason"] = reason
-        for i, step in enumerate(example["nodes"]):
-            if i == first_error + 1:
-                label = "first_error"
-            elif i < first_error + 1:
-                label = "correct"
-            else:
-                label = ""
-            step["label"] = label
-        with open(os.path.join("manual_annot/final_data", example["doc_id"] + ".json"), "w") as f:
+        if first_error >= 0:
+            for i, step in enumerate(example["nodes"]):
+                if i == 0:
+                    label = "question"
+                elif i == first_error + 1:
+                    label = "first_error"
+                elif i < first_error + 1:
+                    label = "correct"
+                else:
+                    label = ""
+                step["label"] = label
+        with open(os.path.join("manual_annot/data", example["doc_id"] + ".json"), "w") as f:
             json.dump(example, f, indent=4)
     except Exception as e:
         print(example["doc_id"] + " failed with error:", e)
